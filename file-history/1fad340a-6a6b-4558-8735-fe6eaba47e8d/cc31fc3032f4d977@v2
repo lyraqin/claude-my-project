@@ -1,0 +1,377 @@
+# Implementation Plan: AI × ESG Research Project
+
+**Date:** 2026-03-06
+**Status:** DRAFT
+**Research Questions:** 5 (from descriptive to causal/policy)
+
+---
+
+## Executive Summary
+
+This plan outlines the implementation strategy for investigating how companies' consideration of ESG factors in AI creation/adoption affects innovation, productivity, financial performance, and market outcomes. The project progresses from descriptive analysis (RQ1) through correlational and causal designs (RQ2-RQ4) to policy recommendations (RQ5).
+
+---
+
+## Phase 1: Foundation & Data Infrastructure (Weeks 1-3)
+
+### 1.1 Data Acquisition & Access
+
+**Deliverables:**
+- [ ] Secure data access credentials for primary databases
+- [ ] Download and organize raw datasets
+- [ ] Create data dictionary and documentation
+
+**Databases Required:**
+
+| Database | Purpose | Access Method | Priority |
+|----------|---------|---------------|----------|
+| CSMAR | Chinese firm financials, ESG scores | University/institutional license | High |
+| WIND | Alternative financial data source | Subscription | High |
+| CNIPA/PATSTAT | Patent data (green/AI classification) | API or bulk download | High |
+| RESSET/Bond | Bond issuance and pricing data | Institutional access | Medium |
+| Crunchbase/IT桔子 | Startup/AI company tracking | API or subscription | Low |
+
+**Files to Create:**
+- `scripts/data/download_csmar.R` — CSMAR data extraction
+- `scripts/data/download_patents.py` — Patent API wrapper
+- `data/raw/README.md` — Data source documentation
+- `data/dictionary.csv` — Variable definitions
+
+### 1.2 Variable Construction Framework
+
+**Core Variables:**
+
+**AI Creation/Adoption Indicators:**
+1. **AI Patent Count** — IPC/CPC codes G06N, G06F17/27, etc.
+2. **AI Job Postings** — NLP extraction from recruitment platforms
+3. **AI Announcements** — Keyword search in company disclosures
+4. **Cloud/AI Service Adoption** — IT expenditure classification
+
+**ESG Consideration Measures:**
+1. **ESG Scores** — Third-party ratings (MSCI, Bloomberg, Wind ESG)
+2. **ESG Disclosure Quality** — Text analysis of annual reports
+3. **Green Patent Ratio** — Environmental-related patents / total patents
+4. **AI Ethics Policies** — Manual coding or NLP classification
+
+**Outcome Variables:**
+1. **Innovation:** Patent count/quality, R&D efficiency, new product launches
+2. **Productivity:** TFP (Olley-Pakes or LP method), labor productivity
+3. **Financial:** ROA, ROE, profit margins, cost structure
+4. **Market:** Stock returns, volatility, credit spreads, Tobin's Q
+
+**Files to Create:**
+- `scripts/variables/construct_ai_metrics.R` — AI indicators
+- `scripts/variables/construct_esg_metrics.R` — ESG measures
+- `scripts/variables/construct_outcomes.R` — Outcome variables
+- `scripts/variables/merge_panel.R` — Master panel construction
+
+---
+
+## Phase 2: Descriptive Analysis - RQ1 (Weeks 2-4)
+
+### 2.1 Research Question 1: Prevalence and Heterogeneity
+
+**Question:** How prevalent is ESG consideration in AI projects among Chinese firms, and what are the cross-sectional patterns?
+
+**Analysis Plan:**
+
+```
+Step 1: Sample Construction
+├── Filter: Non-financial listed firms (A-share)
+├── Time period: 2015-2023 (AI boom period)
+├── Observations: Firm-year panel
+└── Final sample: ~3,000-4,000 firms × 9 years
+
+Step 2: Descriptive Statistics
+├── AI creation vs. adoption distribution
+├── ESG consideration rates by firm characteristics
+├── Industry-level patterns (manufacturing vs. services)
+└── Geographic distribution (province/city clusters)
+
+Step 3: Visualization
+├── Time trends: AI+ESG adoption over years
+├── Heatmaps: Industry × ESG score × AI adoption
+├── Network: Supply chain ESG spillovers (if data available)
+└── Maps: Geographic concentration of green AI
+```
+
+**Output Files:**
+- `output/descriptive/rq1_summary_stats.html` — Interactive tables
+- `output/descriptive/rq1_trends.pdf` — Time series plots
+- `output/descriptive/rq1_heterogeneity.pdf` — Cross-sectional analysis
+
+**Quality Gates:**
+- [ ] Sample coverage > 80% of listed non-financial firms
+- [ ] Missing data patterns documented
+- [ ] Robustness to alternative AI/ESG definitions tested
+
+---
+
+## Phase 3: Correlational Analysis - RQ2 (Weeks 4-7)
+
+### 3.1 Research Question 2: Innovation Outcomes
+
+**Question:** Is ESG consideration in AI projects associated with different types of innovation outcomes?
+
+**Empirical Strategy:**
+
+**Model 1: Innovation Quantity**
+```
+Patents_{i,t} = β₀ + β₁(AI_ESG_{i,t-1}) + β₂(AI_only_{i,t-1}) + β₃(ESG_only_{i,t-1})
+                + γX_{i,t-1} + μ_i + λ_t + ε_{i,t}
+```
+
+**Model 2: Innovation Quality (citations)**
+```
+Citations_{i,t} = β₀ + β₁(AI_ESG_{i,t-1}) + ... + ε_{i,t}
+```
+
+**Model 3: Green Innovation**
+```
+Green_Patents_{i,t} = β₀ + β₁(AI_ESG_{i,t-1}) + ... + ε_{i,t}
+```
+
+**Key Variations:**
+- [ ] PSM-DiD: Match AI+ESG firms with AI-only, ESG-only, and neither groups
+- [ ] Event study: Around AI project announcements with/without ESG components
+- [ ] Heterogeneity: By industry, ownership (SOE vs. private), region
+
+**Output Files:**
+- `output/regression/rq2_innovation_quantity.html` — Regression tables
+- `output/regression/rq2_innovation_quality.html` — Citation analysis
+- `output/regression/rq2_green_innovation.html` — Green patent focus
+- `output/figures/rq2_event_study.pdf` — Dynamic effects
+
+**Robustness Checks:**
+- [ ] Alternative innovation measures (new products, R&D efficiency)
+- [ ] Alternative ESG definitions (environmental only vs. full ESG)
+- [ ] Placebo tests: Random assignment of treatment
+- [ ] Sample splits: Exclude post-2020 (COVID period)
+
+---
+
+## Phase 4: Causal Analysis - RQ3 (Weeks 7-12)
+
+### 4.1 Research Question 3: Financial and Market Performance
+
+**Question:** Does ESG consideration in AI projects causally improve financial performance and market valuations?
+
+**Identification Strategies:**
+
+**Strategy A: Policy Shock - DiD**
+- **Treatment:** Firms in industries affected by AI governance regulations
+- **Timing:** staggered implementation across provinces/sectors
+- **Example:** Provincial AI development plans with ESG requirements
+
+**Strategy B: Instrumental Variables**
+- **Instrument 1:** Local AI talent supply (university AI program expansion)
+- **Instrument 2:** Cloud service provider expansion (exogenous IT infrastructure)
+- **IV Validity:** Relevance (affects AI adoption) + Exclusion (affects outcomes only through AI)
+
+**Strategy C: Regression Discontinuity**
+- **Cutoff:** ESG rating thresholds that trigger index inclusion
+- **Outcome:** AI investment patterns around the threshold
+
+**Empirical Models:**
+
+```
+// Financial Performance
+ROA_{i,t} = β₀ + β₁(AI_ESG_{i,t-1}) + γX_{i,t-1} + μ_i + λ_t + ε_{i,t}
+
+// Market Performance (event study)
+CAR_{i,t} = Σ β_k × Event_{i,t-k} + γX_{i,t} + ε_{i,t}
+
+// Credit Spreads (if bond data available)
+Spread_{i,t} = β₀ + β₁(AI_ESG_{i,t-1}) + γControls + ε_{i,t}
+```
+
+**Output Files:**
+- `output/causal/rq3_did_results.html` — DiD regression tables
+- `output/causal/rq3_iv_results.html` — IV estimates
+- `output/causal/rq3_rd_results.html` — RD analysis (if applicable)
+- `output/figures/rq3_parallel_trends.pdf` — Parallel trends tests
+- `output/figures/rq3_event_study.pdf` — Event study plots
+
+**Quality Gates:**
+- [ ] Parallel trends validated for DiD
+- [ ] First-stage F > 10 for IV
+- [ ] Placebo tests passed
+- [ ] Sensitivity to alternative specifications documented
+
+---
+
+## Phase 5: Mechanism Analysis - RQ4 (Weeks 10-14)
+
+### 5.1 Research Question 4: Mechanism Channels
+
+**Question:** Through what channels does ESG consideration in AI affect firm outcomes?
+
+**Hypothesized Channels:**
+
+1. **Risk Reduction Channel**
+   - Regulatory risk (fewer fines, penalties)
+   - Litigation risk (fewer AI-related lawsuits)
+   - Reputational risk (media sentiment)
+
+2. **Social Acceptance Channel**
+   - Customer retention and acquisition
+   - Employee satisfaction and retention
+   - Stakeholder trust
+
+3. **Technology Direction Channel**
+   - Shift toward sustainable AI applications
+   - Green technology portfolio
+   - Long-term vs. short-term orientation
+
+**Mediation Analysis Framework:**
+
+```
+Step 1: Total Effect
+Y = β₀ + β₁(AI_ESG) + ε
+
+Step 2: First Stage (Treatment → Mediator)
+M = α₀ + α₁(AI_ESG) + ε
+
+Step 3: Second Stage (Treatment + Mediator → Outcome)
+Y = γ₀ + γ₁(AI_ESG) + γ₂(M) + ε
+
+Indirect Effect = α₁ × γ₂
+Direct Effect = γ₁
+```
+
+**Data Requirements:**
+- Media sentiment indices (Wisers, Baidu Index)
+- Employee turnover data (LinkedIn, company disclosures)
+- Customer metrics (where available)
+- Regulatory enforcement actions database
+
+**Output Files:**
+- `output/mechanisms/rq4_mediation_analysis.html` — Mediation results
+- `output/mechanisms/rq4_channel_heterogeneity.html` — By industry/firm type
+- `output/figures/rq4_channel_decomposition.pdf` — Visual decomposition
+
+---
+
+## Phase 6: Policy Analysis - RQ5 (Weeks 12-16)
+
+### 5.1 Research Question 5: Financing Mechanisms
+
+**Question:** What financing instruments are most suitable for AI+ESG projects?
+
+**Analysis Components:**
+
+1. **Green Bond Analysis**
+   - Match green bond issuers with AI+ESG firms
+   - Compare yield spreads: green vs. conventional bonds
+   - Event study around green bond issuance
+
+2. **Impact Bond Feasibility**
+   - Case studies of existing environmental impact bonds
+   - Adaptation to AI+ESG context
+   - Pay-for-performance metric design
+
+3. **Policy Simulation**
+   - Counterfactual: What if ESG requirements were mandatory for AI projects?
+   - Cost-benefit analysis of different policy designs
+
+**Output Files:**
+- `output/policy/rq5_green_bond_analysis.html` — Bond market analysis
+- `output/policy/rq5_impact_bond_design.md` — Design recommendations
+- `output/policy/rq5_policy_simulation.html` — Simulation results
+
+---
+
+## File Structure
+
+```
+project_root/
+├── data/
+│   ├── raw/                    # Original downloaded data
+│   ├── intermediate/           # Cleaned but not merged
+│   └── processed/              # Analysis-ready datasets
+├── scripts/
+│   ├── data/                   # Data acquisition
+│   ├── variables/              # Variable construction
+│   ├── analysis/
+│   │   ├── rq1_descriptive.R
+│   │   ├── rq2_innovation.R
+│   │   ├── rq3_causal.R
+│   │   ├── rq4_mechanisms.R
+│   │   └── rq5_policy.R
+│   └── utils/                  # Helper functions
+├── output/
+│   ├── descriptive/
+│   ├── regression/
+│   ├── causal/
+│   ├── mechanisms/
+│   └── policy/
+├── quality_reports/
+│   ├── plans/                  # This file
+│   └── session_logs/           # Progress tracking
+└── papers/                     # Literature and references
+```
+
+---
+
+## Timeline & Milestones
+
+| Week | Phase | Key Deliverable | Quality Gate |
+|------|-------|-----------------|--------------|
+| 1-2 | Foundation | Data access secured, raw data downloaded | Data coverage > 80% |
+| 3 | Foundation | Master panel constructed, variables defined | All core variables available |
+| 4 | RQ1 | Descriptive report complete | Sample documented, trends visualized |
+| 6 | RQ2 | Innovation regression results | PSM-DiD validated |
+| 9 | RQ3 | Causal estimates (DiD/IV) | Parallel trends + IV validity |
+| 12 | RQ4 | Mechanism analysis | Mediation robustness checks |
+| 14 | RQ5 | Policy recommendations | Green bond analysis complete |
+| 16 | Integration | Full paper draft | All quality gates passed |
+
+---
+
+## Risk Assessment & Mitigation
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| Data access denied | Medium | High | Identify alternative data sources early |
+| Weak identification | Medium | High | Multiple strategies, transparent bounds |
+| Measurement error | High | Medium | Multiple proxies, sensitivity analysis |
+| Sample selection bias | Medium | High | Heckman correction, bounds analysis |
+| Reverse causality | Medium | High | Lagged variables, IV, event studies |
+| External validity | Low | Medium | Cross-country comparison if possible |
+
+---
+
+## Next Steps (Immediate Actions)
+
+1. **Data Access (This Week)**
+   - [ ] Contact university library for CSMAR/WIND access
+   - [ ] Apply for CNIPA patent data API key
+   - [ ] Verify RESSET bond data availability
+
+2. **Team Setup (This Week)**
+   - [ ] Assign roles: data manager, analyst, coder
+   - [ ] Set up version control (GitHub repository)
+   - [ ] Establish coding standards and documentation rules
+
+3. **Pilot Analysis (Week 2)**
+   - [ ] Download sample year (2022) for testing
+   - [ ] Construct pilot variables
+   - [ ] Validate AI/ESG keyword dictionaries
+
+---
+
+## Approval Required
+
+Before proceeding to implementation, confirm:
+
+- [ ] Data access strategy approved
+- [ ] Research questions prioritized correctly
+- [ ] Timeline realistic given constraints
+- [ ] Quality gates acceptable
+
+**Plan Status:** DRAFT — Awaiting approval
+
+---
+
+*Generated: 2026-03-06*
+*Last Updated: 2026-03-06*

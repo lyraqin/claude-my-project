@@ -1,0 +1,237 @@
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/README.md-177-| `tikz-visual-quality` | `.tex` | TikZ diagram visual standards |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/README.md-178-| `beamer-quarto-sync` | `.tex`, `.qmd` | Auto-sync Beamer edits to Quarto |
+.Trash/my-project 19.06.43/README.md:179:| `pdf-processing` | `master_supporting_docs/` | Safe large PDF handling |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/README.md-180-| `proofreading-protocol` | `.tex`, `.qmd`, `quality_reports/` | Propose-first, then apply with approval |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/README.md-181-| `no-pause-beamer` | `.tex` | No overlay commands in Beamer |
+--
+.Trash/my-project 19.06.43/README.md-210-| [Quarto](https://quarto.org) | Web slides | [quarto.org/docs/get-started](https://quarto.org/docs/get-started/) |
+.Trash/my-project 19.06.43/README.md-211-| R | Figures & analysis | [r-project.org](https://www.r-project.org/) |
+.Trash/my-project 19.06.43/README.md:212:| pdf2svg | TikZ to SVG | `brew install pdf2svg` (macOS) |
+.Trash/my-project 19.06.43/README.md-213-| [gh CLI](https://cli.github.com/) | PR workflow | `brew install gh` (macOS) |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/README.md-214-
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.gitignore-20-
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.gitignore-21-# Compiled PDFs (uncomment to track specific PDFs)
+.Trash/my-project 19.06.43/.gitignore:22:# *.pdf
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.gitignore-23-
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.gitignore-24-# Python
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/scripts/sync_to_docs.sh-62-# 3. Sync Beamer PDFs to docs/slides/
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/scripts/sync_to_docs.sh-63-echo "Syncing Beamer PDFs..."
+.Trash/my-project 19.06.43/scripts/sync_to_docs.sh:64:for pdf in "$REPO_ROOT/Slides/"*.pdf; do
+.Trash/my-project 19.06.43/scripts/sync_to_docs.sh:65:    if [ -f "$pdf" ]; then
+.Trash/my-project 19.06.43/scripts/sync_to_docs.sh:66:        echo "  Copying $(basename "$pdf")..."
+.Trash/my-project 19.06.43/scripts/sync_to_docs.sh:67:        cp "$pdf" "$DOCS_DIR/slides/"
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/scripts/sync_to_docs.sh-68-    fi
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/scripts/sync_to_docs.sh-69-done
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-23-| `r-code-conventions.md` | Trimmed 155 → 105 lines | Cut script structure, console policy |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-24-| `replication-protocol.md` | Trimmed 190 → 103 lines | Cut verbose explanations |
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md:25:| `pdf-processing.md` | Trimmed 120 → 61 lines | Cut duplicate quick reference |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-26-| `proofreading-protocol.md` | Trimmed 105 → 47 lines | Cut agent prompt template |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-27-| `single-source-of-truth.md` | Trimmed 86 → 69 lines | Cut verbose explanations |
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-46-- README referenced nonexistent "Section 5" in knowledge-base-template — fixed
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-47-- README referenced project-specific `emory-clean.scss` instead of generic — fixed
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md:48:- pdf-processing.md had duplicated quick reference section — fixed
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-49-
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-50-### Round 2 (deep verification)
+--
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-78-- `verification-protocol`: said `.R` but actual is `docs/` — fixed
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-79-- `single-source-of-truth`: omitted `Figures/` — fixed
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md:80:- `pdf-processing`: said `supporting_papers/` but actual is `master_supporting_docs/` — fixed
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-81-- `proofreading-protocol`: omitted `quality_reports/` — fixed
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-82-- `replication-protocol`: said `Figures/` but actual is only `Figures/*.R` — fixed
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-83-- `orchestrator-research`: omitted `Figures/*.R` (acceptable simplification, kept as-is)
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-84-
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md:85:**Guide:** Same 3 trigger path issues as README (verification-protocol, pdf-processing, proofreading-protocol) — all fixed in appendix table and inline code block.
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-86-
+.Trash/my-project 19.06.43/quality_reports/session_logs/2026-02-09_aggressive-workflow-restructure.md-87-**Rule files:** All 17 files verified. 3 always-on (no `paths:` by design), 14 path-scoped (all have correct `paths:` frontmatter). Templates directory confirmed at `templates/` with 4 files. No critical issues.
+--
+.Trash/my-project 19.06.43/docs/workflow-guide.html-102-font-display: block;
+.Trash/my-project 19.06.43/docs/workflow-guide.html-103-font-family: "bootstrap-icons";
+.Trash/my-project 19.06.43/docs/workflow-guide.html:104:[Omitted long matching line]
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-105-}
+.Trash/my-project 19.06.43/docs/workflow-guide.html-106-.bi::before,
+--
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1458-.bi-dash-lg::before { content: "\f63b"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1459-.bi-exclamation-lg::before { content: "\f63c"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html:1460:.bi-file-earmark-pdf-fill::before { content: "\f63d"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html:1461:.bi-file-earmark-pdf::before { content: "\f63e"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html:1462:.bi-file-pdf-fill::before { content: "\f63f"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html:1463:.bi-file-pdf::before { content: "\f640"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1464-.bi-gender-ambiguous::before { content: "\f641"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1465-.bi-gender-female::before { content: "\f642"; }
+--
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1726-.bi-filetype-mp4::before { content: "\f754"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1727-.bi-filetype-otf::before { content: "\f755"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html:1728:.bi-filetype-pdf::before { content: "\f756"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1729-.bi-filetype-php::before { content: "\f757"; }
+.Trash/my-project 19.06.43/docs/workflow-guide.html-1730-.bi-filetype-png::before { content: "\f758"; }
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-3366-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-3367-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Facts</span></span>
+.Trash/my-project 19.06.43/docs/workflow-guide.html:3368:<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Project uses XeLaTeX, not pdflatex</span>
+.Trash/my-project 19.06.43/docs/workflow-guide.html-3369-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bibliography file: Bibliography_base.bib</span>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-3370-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-4454-<tr class="odd">
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-4455-<td>PDF Processing</td>
+.Trash/my-project 19.06.43/docs/workflow-guide.html:4456:<td><code>pdf-processing.md</code></td>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-4457-<td><code>master_supporting_docs/</code></td>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/docs/workflow-guide.html-4458-</tr>
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/hooks/verify-reminder.py-39-    ".json", ".yaml", ".yml", ".toml", ".ini", ".cfg",
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/hooks/verify-reminder.py-40-    ".lock", ".env", ".gitignore",
+.Trash/my-project 19.06.43/.claude/hooks/verify-reminder.py:41:    ".svg", ".png", ".jpg", ".pdf",
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/hooks/verify-reminder.py-42-    ".bib", ".cls", ".sty"
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/hooks/verify-reminder.py-43-]
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.qmd-701-
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.qmd-702-## Key Facts
+.Trash/my-project 19.06.43/guide/workflow-guide.qmd:703:- Project uses XeLaTeX, not pdflatex
+.Trash/my-project 19.06.43/guide/workflow-guide.qmd-704-- Bibliography file: Bibliography_base.bib
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.qmd-705-
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.qmd-1615-| TikZ Quality | `tikz-visual-quality.md` | `.tex` |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.qmd-1616-| Beamer-Quarto Sync | `beamer-quarto-sync.md` | `.tex`, `.qmd` |
+.Trash/my-project 19.06.43/guide/workflow-guide.qmd:1617:| PDF Processing | `pdf-processing.md` | `master_supporting_docs/` |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.qmd-1618-| Proofreading Protocol | `proofreading-protocol.md` | `.tex`, `.qmd`, `quality_reports/` |
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.qmd-1619-| No Pause | `no-pause-beamer.md` | `.tex` |
+--
+.Trash/my-project 19.06.43/.claude/rules/verification-protocol.md-26-## For TikZ Diagrams in HTML/Quarto:
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/verification-protocol.md-27-1. Browsers **cannot** display PDF images inline — ALWAYS convert to SVG
+.Trash/my-project 19.06.43/.claude/rules/verification-protocol.md:28:2. Use SVG (vector format) for crisp rendering: `pdf2svg input.pdf output.svg`
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/verification-protocol.md-29-3. **NEVER use PNG for diagrams** — PNG is raster and looks blurry
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/verification-protocol.md-30-4. Verify SVG files contain valid XML/SVG markup
+--
+.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-34-### Step 3: Count the number of pages
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-35-```bash
+.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md:36:pdfinfo extract_tikz.pdf | grep "Pages:"
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-37-```
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-38-
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-42-
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-43-```bash
+.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md:44:PAGES=$(pdfinfo extract_tikz.pdf | grep "Pages:" | awk '{print $2}')
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-45-for i in $(seq 1 $PAGES); do
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-46-  idx=$(printf "%02d" $((i-1)))
+.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md:47:  pdf2svg extract_tikz.pdf tikz_exact_$idx.svg $i
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-48-done
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/extract-tikz/SKILL.md-49-```
+--
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-14-**Step 2: Check PDF Properties**
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-15-```bash
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md:16:pdfinfo paper_name.pdf | grep "Pages:"
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md:17:ls -lh paper_name.pdf
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-18-```
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-19-
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-25-  start=$((i*5 + 1))
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-26-  end=$(((i+1)*5))
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md:27:  gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER \
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-28-     -dFirstPage=$start -dLastPage=$end \
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md:29:     -sOutputFile="paper_name/paper_name_p$(printf '%03d' $start)-$(printf '%03d' $end).pdf" \
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md:30:     paper_name.pdf 2>/dev/null
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-31-done
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-32-```
+--
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-52-**If splitting fails:**
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-53-1. Check if Ghostscript is installed: `gs --version`
+.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md:54:2. Try alternative: `pdftk paper.pdf burst output paper_%03d.pdf`
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-55-3. If all else fails, ask user to upload specific page ranges manually
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/rules/pdf-processing.md-56-
+--
+.Trash/my-project 19.06.43/guide/workflow-guide.html-102-font-display: block;
+.Trash/my-project 19.06.43/guide/workflow-guide.html-103-font-family: "bootstrap-icons";
+.Trash/my-project 19.06.43/guide/workflow-guide.html:104:[Omitted long matching line]
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-105-}
+.Trash/my-project 19.06.43/guide/workflow-guide.html-106-.bi::before,
+--
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1458-.bi-dash-lg::before { content: "\f63b"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1459-.bi-exclamation-lg::before { content: "\f63c"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html:1460:.bi-file-earmark-pdf-fill::before { content: "\f63d"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html:1461:.bi-file-earmark-pdf::before { content: "\f63e"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html:1462:.bi-file-pdf-fill::before { content: "\f63f"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html:1463:.bi-file-pdf::before { content: "\f640"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1464-.bi-gender-ambiguous::before { content: "\f641"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1465-.bi-gender-female::before { content: "\f642"; }
+--
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1726-.bi-filetype-mp4::before { content: "\f754"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1727-.bi-filetype-otf::before { content: "\f755"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html:1728:.bi-filetype-pdf::before { content: "\f756"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1729-.bi-filetype-php::before { content: "\f757"; }
+.Trash/my-project 19.06.43/guide/workflow-guide.html-1730-.bi-filetype-png::before { content: "\f758"; }
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-3492-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-3493-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Facts</span></span>
+.Trash/my-project 19.06.43/guide/workflow-guide.html:3494:<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Project uses XeLaTeX, not pdflatex</span>
+.Trash/my-project 19.06.43/guide/workflow-guide.html-3495-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bibliography file: Bibliography_base.bib</span>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-3496-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-4959-<tr class="odd">
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-4960-<td>PDF Processing</td>
+.Trash/my-project 19.06.43/guide/workflow-guide.html:4961:<td><code>pdf-processing.md</code></td>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-4962-<td><code>master_supporting_docs/</code></td>
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/guide/workflow-guide.html-4963-</tr>
+--
+.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-3-description: Comprehensive manuscript review covering argument structure, econometric specification, citation completeness, and potential referee objections
+.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-4-disable-model-invocation: true
+.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md:5:argument-hint: "[paper filename in master_supporting_docs/ or path to .tex/.pdf]"
+.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-6-allowed-tools: ["Read", "Grep", "Glob", "Write", "Task"]
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-7----
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-11-Produce a thorough, constructive review of an academic manuscript — the kind of report a top-journal referee would write.
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-12-
+.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md:13:**Input:** `$ARGUMENTS` — path to a paper (.tex, .pdf, or .qmd), or a filename in `master_supporting_docs/`.
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-14-
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/review-paper/SKILL.md-15----
+--
+.Trash/my-project 19.06.43/.claude/skills/qa-quarto/SKILL.md-34-## Phase 0: Pre-flight
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/qa-quarto/SKILL.md-35-
+.Trash/my-project 19.06.43/.claude/skills/qa-quarto/SKILL.md:36:1. Locate Beamer (.tex/.pdf) and Quarto (.qmd/.html) files
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/qa-quarto/SKILL.md-37-2. Check freshness (re-render if QMD newer than HTML)
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/qa-quarto/SKILL.md-38-3. Verify TikZ SVGs if applicable
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/agents/verifier.md-22-- Grep for `Overfull \\hbox` warnings — count them
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/agents/verifier.md-23-- Grep for `undefined citations` — these are errors
+.Trash/my-project 19.06.43/.claude/agents/verifier.md:24:- Verify PDF was generated: `ls -la FILENAME.pdf`
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/agents/verifier.md-25-
+.Trash/my-project 19.06.43/.claude/agents/verifier.md-26-### For `.qmd` files (Quarto slides):
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-28-      "Bash(latexmk *)",
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-29-      "Bash(bibtex *)",
+.Trash/my-project 19.06.43/.claude/settings.json:30:      "Bash(pdfinfo *)",
+.Trash/my-project 19.06.43/.claude/settings.json:31:      "Bash(pdf2svg *)",
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-32-      "Bash(quarto render *)",
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-33-      "Bash(Rscript *)",
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-42-      "Bash(for *)",
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-43-      "Bash(gs *)",
+.Trash/my-project 19.06.43/.claude/settings.json:44:      "Bash(pdftk *)",
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-45-      "Bash(mkdir *)"
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/settings.json-46-    ]
+--
+.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-35-3. **Open the PDF** for visual verification:
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-36-   ```bash
+.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md:37:   open Slides/$ARGUMENTS.pdf
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-38-   ```
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-39-
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-51-
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-52-## Important
+.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md:53:- **Always use XeLaTeX**, never pdflatex
+.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-54-- **TEXINPUTS** is required: your Beamer theme lives in `Preambles/`
+.Trash/my-project 19.06.43/.claude/skills/compile-latex/SKILL.md-55-- **BIBINPUTS** is required: your `.bib` file lives in the repo root
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/agents/beamer-translator.md-82-
+.Trash/my-project 19.06.43/.claude/agents/beamer-translator.md-83-**Static SVG workflow (for TikZ and complex figures):**
+.Trash/my-project 19.06.43/.claude/agents/beamer-translator.md:84:1. Convert PDF to SVG: `pdf2svg input.pdf output.svg`
+.Trash/my-project 19.06.43/.claude/agents/beamer-translator.md-85-2. Reference: `![](../Figures/LectureN/file.svg){fig-align="center"}`
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/agents/beamer-translator.md-86-3. ALWAYS add `fig-align="center"`
+--
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/data-analysis/SKILL.md-67-- Include proper axis labels (sentence case, units)
+.Trash/my-project 19.06.43/.claude/skills/data-analysis/SKILL.md-68-- Export with explicit dimensions: `ggsave(width = X, height = Y)`
+.Trash/my-project 19.06.43/.claude/skills/data-analysis/SKILL.md:69:- Save as both `.pdf` and `.png`
+/Users/my/.claude/worktrees/agent-aa8ff484/.Trash/my-project 19.06.43/.claude/skills/data-analysis/SKILL.md-70-
+.Trash/my-project 19.06.43/.claude/skills/data-analysis/SKILL.md-71-### Phase 5: Save and Review

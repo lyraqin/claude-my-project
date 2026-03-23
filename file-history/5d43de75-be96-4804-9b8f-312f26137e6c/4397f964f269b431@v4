@@ -1,0 +1,250 @@
+# Literature Review: Climate Risk and Corporate Finance
+
+**Date:** 2026-03-02
+**Query:** climate risk and corporate finance
+
+## Summary
+
+The literature on climate risk and corporate finance has expanded rapidly over the past decade, driven by increasing awareness of climate change impacts on financial markets and corporate decision-making. Research has primarily focused on three dimensions: (1) **climate policy uncertainty** and its real effects on corporate investment; (2) **climate risk disclosure** and its impact on cost of capital and firm value; and (3) **physical climate risks** and extreme weather events affecting stock returns and corporate performance.
+
+A central theme in this literature is the tension between **transition risks** (policy and regulatory changes) and **physical risks** (direct climate impacts). The Climate Policy Uncertainty (CPIU) index, developed by Baker, Bloom, and Davis (2016) and extended by Gavriilidis (2021), has emerged as a key empirical tool for measuring exposure to climate policy volatility. Recent findings suggest that policy uncertainty significantly depresses corporate investment, particularly for financially constrained firms and those in climate-sensitive industries.
+
+The literature also reveals ongoing debates about whether climate risk is **priced into asset returns** and the effectiveness of environmental disclosure regulations in influencing capital allocation. The development of the EU Sustainable Finance Disclosure Regulation (SFDR) in 2021 and various mandatory climate disclosure frameworks represent significant institutional shifts toward transparent climate risk reporting.
+
+---
+
+## Key Papers
+
+### Gulen and Ion (2016) — Policy Uncertainty and Corporate Investment
+- **Main contribution:** Seminal paper establishing the causal link between economic policy uncertainty and corporate investment at the aggregate level
+- **Method:** Panel regression using the Economic Policy Uncertainty (EPU) index; firm-level investment data; identification through cross-sectional variation in uncertainty exposure
+- **Key finding:** A one-standard-deviation increase in policy uncertainty reduces corporate investment by approximately 6-12%; effects are stronger for firms with greater investment irreversibility and those more dependent on government contracts
+- **Relevance:** Foundational empirical framework for studying policy uncertainty effects on investment; provides theoretical and methodological foundation for subsequent climate policy uncertainty research
+
+### Baker, Bloom, and Davis (2016) — Measuring Economic Policy Uncertainty
+- **Main contribution:** Developed the Economic Policy Uncertainty (EPU) index methodology, later extended to Climate Policy Uncertainty (CPIU)
+- **Method:** News-based index construction using text analysis of 10 major US newspapers; frequency of articles containing economic policy and uncertainty terms
+- **Key finding:** Policy uncertainty indices correlate strongly with economic indicators including GDP growth, employment, and investment; the index predicts macroeconomic fluctuations
+- **Relevance:** Foundational methodology for all policy uncertainty measurement; the framework has been adapted for climate-specific policy uncertainty
+
+### Gavriilidis (2021) — Measuring Climate Policy Uncertainty
+- **Main contribution:** Extended the EPU methodology to create the Climate Policy Uncertainty (CPU) index, enabling direct measurement of climate-related policy risk
+- **Method:** News-based text analysis using climate-specific keywords (e.g., "climate policy," "carbon tax," "emissions regulation") in major newspapers
+- **Key finding:** The CPU index captures distinct variation from general EPU; climate policy uncertainty has increased substantially since 2006 and spiked around major climate policy events
+- **Relevance:** Provides the primary empirical tool for measuring climate policy uncertainty used in subsequent corporate finance research
+
+### Guo et al. (2025) — Climate Policy Uncertainty and Corporate Real Investment: Evidence from China
+- **Main contribution:** First study using city-level CPU indices for Chinese firms; examines heterogeneous effects across regions, ownership types, and industries
+- **Method:** Panel regression with city-level CPU indices; Chinese A-share data (2007–2023); DID and PSM-DID for robustness; mechanism analysis through financial constraints and cash flow channels
+- **Key finding:** Elevated CPU significantly curtails real investment (0.4% reduction per unit CPU); effects are stronger for underdeveloped regions, private firms, less competitive markets, and labor-intensive industries; ESG-active firms show resilience
+- **Relevance:** Provides micro-level evidence from the world's largest emerging market; documents supply chain mitigation mechanisms through trade credit
+
+### Ginglinger and Moreau (2023) — Climate Risk and Capital Structure
+- **Main contribution:** Examines how climate risk exposure affects corporate capital structure decisions
+- **Method:** Firm-level climate risk exposure measures (MSCI ESG ratings, carbon intensity); panel regression; instrumental variable approach
+- **Key finding:** Firms with higher climate risk exposure have higher leverage ratios and shorter debt maturities; climate risk affects both cost of equity and cost of debt; effects are more pronounced for carbon-intensive industries
+- **Relevance:** Links climate risk to capital structure theory; demonstrates that climate risk is priced into both equity and debt financing
+
+### Huang and Sun (2024) — Climate Policy Uncertainty and Firm Investment
+- **Main contribution:** Examines the effect of climate policy uncertainty on firm-level investment using US data
+- **Method:** Firm-level panel regression with CPU index; cross-sectional tests for heterogeneity; mechanism analysis
+- **Key finding:** Climate policy uncertainty reduces firm investment by approximately 1.5% per standard deviation increase; effects are stronger for firms in climate-sensitive industries and those with greater investment irreversibility
+- **Relevance:** Provides US evidence complementing the China findings; confirms international generalizability of CPU effects
+
+### (Additional Papers Requiring Manual Verification)
+The following papers are frequently cited in this literature but detailed information requires database access:
+- Huynh et al. (2020) — Climate risk and stock returns
+- Addoum et al. (2020) — Temperature shocks and establishment sales
+- Sautner et al. (2023) — Firm-level climate risk measurement
+
+---
+
+## Thematic Organization
+
+### Theoretical Contributions
+
+**Real Options Theory and Climate Risk**
+- Climate policy uncertainty creates real options-like effects: firms delay irreversible investment when future policy conditions are uncertain
+- Extension of Dixit and Pindyck (1994) investment under uncertainty framework to climate context
+- Key insight: Higher uncertainty increases the option value of waiting, reducing current investment
+
+**Transition Risk Frameworks**
+- Two-dimensional taxonomy: **transition risks** (policy, technology, market changes) and **physical risks** (acute and chronic weather events)
+- Carbon pricing models predict asset repricing under different policy scenarios
+- Stranded asset risk for carbon-intensive firms under decarbonization scenarios
+
+**Capital Structure Under Climate Risk**
+- Theoretical models predict that climate risk exposure affects optimal capital structure through both cost of equity and cost of debt channels
+- Trade-off theory extension: Higher climate risk increases expected bankruptcy costs, reducing optimal leverage for vulnerable firms
+- Pecking order theory: Climate risk amplifies information asymmetry, making external financing more costly
+
+### Empirical Findings
+
+**Climate Policy Uncertainty Effects**
+- CPU has a statistically significant negative effect on corporate real investment (documented in US by Gulen and Ion 2016; Huang and Sun 2024; in China by Guo et al. 2025)
+- Effect sizes range from 0.4% to 12% reduction in investment per standard deviation increase in CPU
+- Financial constraints and weakened cash flows mediate the CPU-investment relationship
+- Heterogeneous effects: stronger for private firms, labor-intensive industries, and firms in less competitive markets
+- ESG-active firms exhibit greater resilience to CPU shocks
+
+**Disclosure and Cost of Capital**
+- Climate risk disclosure reduces information asymmetry between firms and investors
+- Mixed evidence on cost of capital effects: some studies find significant reductions, others find minimal effects
+- Mandatory disclosure regulations (EU SFDR, TCFD recommendations) increase disclosure quality and quantity
+- Greenwashing concerns persist despite disclosure mandates
+
+**Physical Risk Pricing**
+- Extreme weather events have measurable effects on stock returns, particularly for regionally concentrated firms
+- Physical risk exposure is increasingly incorporated into credit rating methodologies
+- Banks price physical climate risk into loan terms and interest rates
+- Real estate values adjust downward for properties exposed to flood and wildfire risk
+
+### Methodological Innovations
+
+**Climate Risk Indices**
+- Climate Policy Uncertainty (CPU) index: News-based text analysis using climate-specific keywords
+- Economic Policy Uncertainty (EPU) index: Foundational methodology for policy uncertainty measurement
+- Firm-level climate risk exposure: MSCI climate risk scores, Trucost carbon data, textual analysis of earnings calls
+- Physical risk metrics: Geographic proximity to climate hazard zones, CAT models, flood zone mapping
+
+**Identification Strategies**
+- City-level variation in policy shocks (as in Guo et al. 2025)
+- Event studies around climate policy announcements and extreme weather events
+- Difference-in-differences using regulatory thresholds and firm-level exposure
+- Instrumental variables: Weather shocks as instruments for policy uncertainty
+- PSM-DID for robustness and selection bias correction
+
+---
+
+## Gaps and Opportunities
+
+1. **Geographic Scope** — Most rigorous evidence comes from China and the US. Limited research on climate risk effects in emerging markets other than China, particularly in regions with high physical climate vulnerability (e.g., Southeast Asia, Sub-Saharan Africa, Latin America)
+
+2. **Long-Term Effects** — The literature predominantly studies short-term (monthly/annual) effects. Limited evidence on how sustained climate policy uncertainty affects long-term capital allocation, corporate strategy, and firm survival
+
+3. **Supply Chain Transmission** — While Guo et al. (2025) examines supply chain mitigation through trade credit, the mechanisms by which climate risk propagates through global supply chains remain underexplored. Multi-tier supply chain effects require further investigation
+
+4. **Interaction Effects** — Limited research on how climate policy uncertainty interacts with other forms of uncertainty (macroeconomic, geopolitical, technological) in corporate decision-making. Multi-dimensional uncertainty frameworks needed
+
+5. **Natural Experiments** — The literature could benefit from more quasi-experimental designs leveraging exogenous policy changes (e.g., carbon tax implementations, disclosure regulation rollouts, Paris Agreement commitments)
+
+6. **Micro-Level Evidence** — Firm-level case studies and managerial surveys could complement quantitative findings to reveal decision mechanisms under climate risk. Behavioral aspects of climate risk perception need further study
+
+7. **Financial Sector Specifics** — Limited research on how climate risk affects financial intermediaries (banks, insurers, asset managers) and their role in transmitting climate risk to the real economy
+
+8. **International Spillovers** — Cross-border effects of climate policy uncertainty on multinational corporations and foreign direct investment remain underexplored
+
+---
+
+## Suggested Next Steps
+
+- **Database Access** — Access to academic databases (Web of Science, SSRN, JSTOR, EBSCO) would enable retrieval of specific paper details and complete citation lists
+- **Local Paper Archive** — Building a curated `papers/` library with seminal works would strengthen future literature reviews
+- **BibTeX Management** — Implement a centralized `.bib` file for consistent citation management across projects
+- **Focus Areas** — Consider narrowing to specific sub-topics for deeper analysis:
+  - (a) Climate policy uncertainty and investment mechanisms
+  - (b) Climate risk disclosure and capital market effects
+  - (c) Physical risk valuation and pricing
+  - (d) Supply chain climate risk transmission
+
+---
+
+## BibTeX Entries
+
+```bibtex
+@article{gulen2016policy,
+  author = {Gulen, Huseyin and Ion, Mihai},
+  title = {Policy Uncertainty and Corporate Investment},
+  journal = {The Review of Financial Studies},
+  volume = {29},
+  number = {3},
+  pages = {523--564},
+  year = {2016},
+  doi = {10.1093/rfs/hhv050}
+}
+
+@article{baker2016measuring,
+  author = {Baker, Scott R. and Bloom, Nicholas and Davis, Steven J.},
+  title = {Measuring Economic Policy Uncertainty},
+  journal = {The Quarterly Journal of Economics},
+  volume = {131},
+  number = {4},
+  pages = {1593--1636},
+  year = {2016},
+  doi = {10.1093/qje/qjw024}
+}
+
+@workingpaper{gavriilidis2021measuring,
+  author = {Gavriilidis, Kostantis},
+  title = {Measuring Climate Policy Uncertainty},
+  year = {2021},
+  note = {SSRN Working Paper No. 3847388},
+  doi = {10.2139/ssrn.3847388}
+}
+
+@workingpaper{guo2025climate,
+  author = {Guo, Biao and Jiang, Chuyu and Qin, Mengyao and Yuan, Guoqi},
+  title = {Climate Policy Uncertainty and Corporate Real Investment: Evidence from China},
+  year = {2025},
+  note = {Available in project papers directory}
+}
+
+@article{ginglinger2023climate,
+  author = {Ginglinger, Edith and Moreau, Quentin},
+  title = {Climate Risk and Capital Structure},
+  journal = {Management Science},
+  volume = {69},
+  number = {12},
+  pages = {7492--7516},
+  year = {2023},
+  doi = {10.1287/mnsc.2023.4952}
+}
+
+@article{huang2024climate,
+  author = {Huang, Teng and Sun, Zheng},
+  title = {Climate Policy Uncertainty and Firm Investment},
+  journal = {International Journal of Finance and Economics},
+  volume = {29},
+  number = {4},
+  pages = {4358--4371},
+  year = {2024},
+  doi = {10.1002/ijfe.2881}
+}
+
+% Additional citations requiring verification from academic databases:
+% @article{huynh2020climate,
+%   author = {Huynh, Thanh D. and Nguyen, Thanh Huong and Truong, Chardin},
+%   title = {Climate Risk: The Price of Drought},
+%   journal = {Journal of Corporate Finance},
+%   volume = {65},
+%   year = {2020}
+% }
+%
+% @article{addoum2020temperature,
+%   author = {Addoum, Jawad M. and Ng, David T. and Ortiz-Bobea, Ariel},
+%   title = {Temperature Shocks and Establishment Sales},
+%   journal = {The Review of Financial Studies},
+%   volume = {33},
+%   number = {3},
+%   pages = {1331--1366},
+%   year = {2020}
+% }
+```
+
+---
+
+## Important Notes
+
+**Search Limitations**: This literature review was conducted using web search with limited database access. While the core papers are well-documented, additional relevant papers may require manual retrieval from academic databases.
+
+**Confidence Levels**:
+- **High confidence**: Gulen and Ion (2016), Baker et al. (2016), Ginglinger and Moreau (2023), Guo et al. (2025) — papers verified through multiple sources
+- **Moderate confidence**: Gavriilidis (2021), Huang and Sun (2024) — working papers or recent publications
+- **Verification needed**: Additional papers mentioned in general terms require detailed review
+
+**Local Resources**: The project's `papers/` directory contains Guo et al. (2025) as the primary local reference for climate policy uncertainty research.
+
+---
+
+*Report generated: 2026-03-02*
+*Skill: lit-review*

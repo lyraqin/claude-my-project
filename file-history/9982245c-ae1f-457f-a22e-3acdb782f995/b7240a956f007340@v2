@@ -1,0 +1,105 @@
+# Manuscript Review: Interface Design Research in IS
+
+**Date:** 2026-03-22
+**Reviewer:** review-paper skill
+**File:** /Users/my/Desktop/RA/Junting/Interface design research in IS - MY.docx
+
+## Summary Assessment
+
+**Overall recommendation:** Revise & Resubmit
+
+This manuscript presents a structured literature review positioning a study at the intersection of Information Systems (visual interface effects on cognition and decision-making) and Finance (visual risk metrics and investor behavior). The core contribution lies in proposing to bridge abstract visualization research with real-world financial decision environments, using Morningstar's 2019 interface redesign as a motivating case. The document synthesizes a substantial body of work across IS journals, MIS outlets, and Management Science, covering website design cognition, marketing/actions support, neurophysiological approaches, and finance applications of visual analytics.
+
+**Key strengths:** The dual positioning (IS vs Finance) is clearly articulated, the literature scope is impressively broad, and the proposed empirical focus on Morningstar's UCR/DCR redesign offers a compelling natural experiment opportunity. The identification of a concrete gap (existing studies do not examine major platform UI redesigns or specific risk-metric encoding in real financial settings) is convincing.
+
+**Key concerns:** This is currently a literature note rather than a fully articulated research paper. There is no empirical methodology section, no data description, no results, and no formal identification strategy. The contribution claims are aspirational rather than demonstrated. The manuscript reads more like a research proposal or theory-building manuscript than a completed empirical study. As currently structured, it would face rejection from top journals without empirical execution.
+
+## Strengths
+
+1. **Clear motivating case:** The Morningstar (2019) redesign with color-coded UCR/DCR provides a tangible, policy-relevant example of visual interface change in a real financial platform.
+
+2. **Comprehensive literature mapping:** The review spans multiple relevant streams—visual cognition, digital nudging, neuro-physiology, and visual finance—showing command of interdisciplinary literature.
+
+3. **Compelling gap identification:** The observation that existing IS visualization studies focus on lab settings and generic charts, not on real-world financial platforms with specific risk metrics and material consequences, is well-founded.
+
+4. **Dual positioning clarity:** The explicit framing of both an IS research question (interface design → cognition/attention/decision-making) and a Finance question (visual risk information → beliefs/capital allocation) serves the interdisciplinary contribution well.
+
+## Major Concerns
+
+### MC1: No Empirical Execution
+- **Dimension:** Argument / Identification
+- **Issue:** The document is entirely conceptual and literature-based. There is no description of data, empirical strategy, hypotheses, results, or robustness checks. The contribution statements ("We show...", "We identify...") are written as if the study has been executed, but no evidence is presented.
+- **Suggestion:** Either reframe this as a formal research proposal/theory paper, or execute the empirical study and present results. For a top-journal empirical paper, the authors need to describe: (a) how Morningstar's rollout was implemented (staggered rollout? A/B testing?), (b) what data are available (user-level capital allocation? fund selection measures?), (c) identification strategy (diff-in-diff? RDD?), and (d) main findings.
+- **Location:** Throughout—particularly contributions section (lines 12-14 of extracted text)
+
+### MC2: Undefined Identification Strategy
+- **Dimension:** Identification
+- **Issue:** The manuscript claims causal impact ("causal impact of visual salience") but offers no discussion of how causal claims would be established. Threats such as selection bias (who uses Morningstar before/after?), concurrent events, and omitted variables are not addressed.
+- **Suggestion:** Explicitly state the identifying variation and assumptions. Was the redesign rolled out to all users simultaneously (making causal inference impossible without control groups) or staggered? What is the counterfactual baseline? If observational data, what is the identification strategy?
+- **Location:** Research gap section and contributions
+
+### MC3: Contribution Overstated Relative to Status
+- **Dimension:** Argument Structure
+- **Issue:** The three stated contributions ("We show...", "We identify...", "We highlight...") are written as achieved outcomes, but the document is entirely literature review. This creates a mismatch between claims and evidence.
+- **Suggestion:** Rephrase contributions as intended contributions ("We will examine...", "Our study aims to...") or provide the empirical work that substantiates the current strong claims.
+- **Location:** Contributions section (lines 12-14)
+
+## Minor Concerns
+
+### mc1: Incomplete Reference Formatting
+- **Issue:** Some Finance citations lack full journal information (e.g., "Available at SSRN" for working papers, some entries incomplete). The bibliography mixes published articles with working papers inconsistently.
+- **Suggestion:** Standardize to [Author, Year, Journal] format throughout; clearly distinguish published work from working papers.
+
+### mc2: No Hypotheses Formalized
+- **Issue:** While the research questions are clear, no formal hypotheses are derived from the literature. The connection from specific literature to testable predictions is not explicit.
+- **Suggestion:** Derive concrete hypotheses about how color-encoding of UCR/DCR will affect: (a) attention allocation to risk metrics, (b) user selection of high/low risk funds, (c) post-redesign capital flow patterns.
+
+### mc3: Ambiguous Dataset Description
+- **Issue:** The document mentions Morningstar's redesign but provides no details on data availability: user-level data? aggregated fund flows? panel vs cross-section? time span?
+- **Suggestion:** Add a brief methods section describing the intended data even if the empirical work isn't yet executed; this clarifies feasibility.
+
+## Referee Objections
+
+### RO1: Where is the evidence?
+**Why it matters:** Top journals (Q1 MIS, JMIS, MISQ, Management Science) will not publish a literature synthesis masquerading as an empirical study. The claims are not supported by analysis.
+**How to address it:** Either (a) execute the empirical study and present results, or (b) reframed as a theory-building manuscript with a clear call for future empirical work.
+
+### RO2: What is the identification strategy?
+**Why it matters:** Causal claims ("causal impact of visual salience") require credible identification. If Morningstar's redesign was a universal rollout without staggered timing or control groups, causal inference is suspect.
+**How to address it:** Describe how causal claims would be justified. Are there unaffected user segments? Can you exploit exogenous variation? If not, frame the study as descriptive correlational analysis with appropriate caveats.
+
+### RO3: How generalizable is Morningstar as a setting?
+**Why it matters:** Morningstar is a specialized platform used by sophisticated investors and advisors. Findings may not generalize to retail brokerage apps (e.g., Robinhood), robo-advisors, or broader e-commerce contexts.
+**How to address it:** Explicitly discuss external validity/generalizability boundaries. Position Morningstar as a "plausible upper bound" case or specify the target population.
+
+### RO4: What is the mechanism channel?
+**Why it matters:** The proposed causal path (visual encoding → attention → perception → allocation) is plausible but untested. Does the mechanism operate via changes in user attention, risk perception, or both?
+**How to address it:** Distinguish and test mechanism channels if possible (e.g., if user-level interaction data exist). Absent such data, acknowledge that the mechanism cannot be directly identified without additional data.
+
+### RO5: How will the neuro-physiological literature be integrated?
+**Why it matters:** The document reviews neuro-phys work (EEG, fMRI studies), but the Morningstar setting does not appear to involve neuro-phys measurement. The connection is rhetorical rather than methodological.
+**How to address it:** Either remove the neuro-phys section (if a pure finance/IS paper is intended) or explain how findings from neuro-phys studies inform specific hypotheses or interpretation without requiring direct measurement.
+
+## Specific Comments
+
+- **Motivation section (line 1):** The Morningstar case description is compelling and should be preserved.
+- IS positioning (lines 3-4) and Finance positioning (line 5) are well-framed; the duality is a contribution.
+- **Literature review:** Impressive scope. Consider grouping studies more explicitly into "direct antecedents" vs "related but distinct streams" to clarify positioning.
+- **Research gap (lines 7-10):** The three bullet points describing what isn't studied are clear and convincing.
+- **Contributions (lines 12-14):** Rephrase to prospective language if empirical results are not yet available.
+- **Finance positioning section (line 248+):** The cited papers are relevant; ensure each is connected to a specific research question or hypothesis.
+- **Visual Finance citations:** Several are SSRN working papers; track publication status for final manuscript.
+
+## Summary Ratings
+
+| Dimension | Rating (1-5) |
+|-----------|-------------|
+| Argument Structure | 3 |
+| Identification | 1 (not yet specified) |
+| Econometrics | 1 (not yet specified) |
+| Literature | 4 |
+| Writing | 4 |
+| Presentation | 3 |
+| **Overall** | **3** |
+
+**Rating interpretation:** This is a promising research note/proposal with a compelling idea, strong literature grounding, and a clear empirical opportunity. It requires empirical execution and clearer methodological details to qualify as a complete manuscript for top-tier journals.

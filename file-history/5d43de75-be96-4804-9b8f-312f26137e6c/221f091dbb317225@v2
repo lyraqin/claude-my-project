@@ -1,0 +1,742 @@
+\documentclass[10pt, aspectratio=169]{beamer}
+
+%--- Theme and Setup ---
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\usefonttheme{professionalfonts}
+
+%--- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows, positioning, shapes}
+
+%--- Metadata ---
+\title[Climate Policy Uncertainty \& Investment]{Climate Policy Uncertainty and Corporate Real Investment}
+\subtitle{Evidence from China}
+\author[Guo et al.]{Biao Guo, Chuyu Jiang, Mengyao Qin, Guoqi Yuan}
+\institute[RUC \& CUFE]{Renmin University of China \and Central University of Finance and Economics}
+\date{2025}
+
+%--- Custom commands ---
+\newcommand{\cpu}{\textit{CPU}}
+\newcommand{\lncpu}{\texttt{lnCPU}}
+\newcommand{\invest}{\textit{Invest}}
+
+\begin{document}
+
+% =============================================================================
+% PART 1: MOTIVATION & BACKGROUND
+% =============================================================================
+
+%--- Slide 1: Title ---
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%--- Slide 2: Motivation ---
+\begin{frame}{Motivation: Why Study Climate Policy Uncertainty?}
+  \begin{itemize}
+    \item \textbf{Global Context}: Escalating climate change has prompted worldwide policy responses
+    \item \textbf{Policy Uncertainty}: Climate policies vary in timing, intensity, and content across regions
+    \item \textbf{Corporate Impact}: Firms face increasingly uncertain and dynamic regulatory environments
+  \end{itemize}
+
+  \vspace{0.5cm}
+
+  \begin{block}{Key Insight}
+    When policy uncertainty is high, firms face a \textit{real options problem}:
+    \begin{itemize}
+      \item Delay investment to wait for clarity
+      \item Adjust capital structure to manage risk
+      \item Seek alternative financing channels (e.g., trade credit)
+    \end{itemize}
+  \end{block}
+
+  \vspace{0.3cm}
+  \textit{Question: How does climate policy uncertainty affect corporate real investment decisions?}
+\end{frame}
+
+%--- Slide 3: Research Question & Contributions ---
+\begin{frame}{Research Question and Contributions}
+  \begin{alertblock}{Research Question}
+    What is the effect of climate policy uncertainty (CPU) on corporate real investment, and through what channels does this effect operate?
+  \end{alertblock}
+
+  \vspace{0.4cm}
+
+  \textbf{Key Contributions:}
+  \begin{enumerate}
+    \item \textbf{Novel Data}: First study using city-level CPU indices for Chinese firms (2007--2023)
+    \item \textbf{Mechanism Identification}: Documents two transmission channels:
+      \begin{itemize}
+        \item Financial constraints
+        \item Cash flow reduction
+      \end{itemize}
+    \item \textbf{Heterogeneous Effects}: Shows varied impacts across:
+      \begin{itemize}
+        \item Regional development levels
+        \item Ownership type (private vs. SOE)
+        \item Industry characteristics (manufacturing, labor-intensive)
+      \end{itemize}
+    \item \textbf{Supply Chain Evidence}: Identifies trade credit as a mitigation mechanism
+  \end{enumerate}
+\end{frame}
+
+%--- Slide 4: Literature Context ---
+\begin{frame}{Literature Context}
+  \textbf{Policy Uncertainty and Investment:}
+  \begin{itemize}
+    \item Gulen and Ion (2016): Policy uncertainty reduces investment at aggregate level
+    \item Baker et al. (2016): Developed Economic Policy Uncertainty (EPU) index methodology
+    \item An et al. (2016): Political uncertainty and investment in China
+  \end{itemize}
+
+  \vspace{0.3cm}
+
+  \textbf{Climate Risk in Corporate Finance:}
+  \begin{itemize}
+    \item Physical risks: Huynh et al. (2020), D'Angelo et al. (2021)
+    \item Transition risks: Huang and Sun (2024) - climate policy uncertainty literature
+    \item ESG and climate strategies: Chemmanur et al. (2024), Chang et al. (2024)
+  \end{itemize}
+
+  \vspace{0.3cm}
+
+  \begin{block}{Gap}
+    Limited evidence on \textit{city-level climate policy uncertainty} and its \textit{micro-level corporate investment effects}, particularly in emerging markets with heterogeneous regional development.
+  \end{block}
+\end{frame}
+
+%--- Slide 5: Transition Slide ---
+\begin{frame}
+  \centering
+  \Huge \textbf{Part 2: Theoretical Framework}
+  \vspace{0.5cm}
+
+  \large From motivation to mechanism
+\end{frame}
+
+% =============================================================================
+% PART 2: THEORETICAL FRAMEWORK & HYPOTHESES
+% =============================================================================
+
+%--- Slide 6: Theoretical Mechanism ---
+\begin{frame}{Theoretical Mechanism: How CPU Affects Investment}
+  Climate policy uncertainty affects corporate investment through \textbf{two primary channels}:
+
+  \vspace{0.4cm}
+
+  \begin{columns}[t]
+    \column{0.48\textwidth}
+      \begin{block}{Channel 1: Financial Constraints}
+        When policy uncertainty is high:
+        \begin{itemize}
+          \item Creditors increase risk premiums
+          \item Banks become more selective in lending
+          \item External financing becomes more costly
+        \end{itemize}
+      \end{block}
+
+    \column{0.48\textwidth}
+      \begin{block}{Channel 2: Cash Flow}
+        When policy uncertainty is high:
+        \begin{itemize}
+          \item Future revenue expectations become uncertain
+          \item Operating cash flows become volatile
+          \item Internal funds for investment decline
+        \end{itemize}
+      \end{block}
+  \end{columns}
+
+  \vspace{0.4cm}
+
+  \textbf{Empirical Prediction}: CPU $\uparrow$ $\Rightarrow$ Invest $\downarrow$
+\end{frame}
+
+%--- Slide 7: Hypotheses ---
+\begin{frame}{Hypotheses Development}
+  \begin{block}{Hypothesis H1}
+    \textit{Climate policy uncertainty negatively affects corporate real investment.}
+  \end{block}
+
+  \vspace{0.3cm}
+
+  \begin{block}{Hypothesis H2}
+    \textit{Climate policy uncertainty tightens financial constraints, reducing corporate real investment.}
+  \end{block}
+
+  \vspace{0.3cm}
+
+  \begin{block}{Hypothesis H3}
+    \textit{Climate policy uncertainty weakens corporate cash flows, reducing corporate real investment.}
+  \end{block}
+
+  \vspace{0.3cm}
+
+  \textit{Note: Additional heterogeneity hypotheses for regions, ownership, industry, and ESG will be examined.}
+\end{frame}
+
+%--- Slide 8: Transition Slide ---
+\begin{frame}
+  \centering
+  \Huge \textbf{Part 3: Data \& Methodology}
+  \vspace{0.5cm}
+
+  \large Empirical design and identification
+\end{frame}
+
+% =============================================================================
+% PART 3: DATA & METHODOLOGY
+% =============================================================================
+
+%--- Slide 9: CPU Index Construction ---
+\begin{frame}{City-Level CPU Index Construction}
+  \textbf{Data Source}: News articles on climate policy from Chinese newspapers (2007--2023)
+
+  \vspace{0.3cm}
+
+  \textbf{Construction Method} (following Baker et al., 2016):
+  \begin{enumerate}
+    \item Articles containing climate-related terms AND policy-uncertainty terms
+    \item Monthly count per city $\rightarrow$ normalized by total article count
+    \item Natural logarithm transformation: $\lncpu_{ct}$
+  \end{enumerate}
+
+  \vspace{0.4cm}
+
+  \begin{center}
+    \small
+    \begin{tabular}{lcc}
+      \toprule
+      \textbf{Region} & \textbf{Max CPU} & \textbf{Min CPU} \\
+      \midrule
+      Bayannur, Inner Mongolia & 1.342 (2023) & -- \\
+      Xiangfan, Hubei & -- & $-$1.620 (2008) \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+
+  \vspace{0.3cm}
+  \textit{Note: Spatial and temporal heterogeneity reflects variation in economic development, industrial composition, and environmental governance pressures.}
+\end{frame}
+
+%--- Slide 10: Data: Chinese Firms ---
+\begin{frame}{Data: Chinese A-Share Listed Firms}
+  \textbf{Sample Period}: 2007 -- 2023
+
+  \vspace{0.3cm}
+
+  \textbf{Data Sources}:
+  \begin{itemize}
+    \item Financial data: CSMAR database
+    \item Climate policy data: City-level CPU index
+    \item Physical risk data: Climate Physical Risk Index (CPRI)
+    \item ESG data: Bloomberg ESG scores
+  \end{itemize}
+
+  \vspace{0.3cm}
+
+  \begin{columns}[t]
+    \column{0.48\textwidth}
+      \textbf{Descriptive Statistics}:
+      \begin{itemize}
+        \item $\invest_{it}$: Mean = 0.064, SD = 0.069
+        \item $\lncpu$: Mean = 0.415, SD = 0.547
+        \item No significant outliers
+      \end{itemize}
+
+    \column{0.48\textwidth}
+      \textbf{Sample Coverage}:
+      \begin{itemize}
+        \item 31 provinces / municipalities
+        \item Multiple industries
+        \item Regional heterogeneity
+      \end{itemize}
+  \end{columns}
+
+  \vspace{0.3cm}
+  \textit{Running example: Manufacturing firms in heterogeneous regions face differential climate policy risks.}
+\end{frame}
+
+%--- Slide 11: Baseline Model ---
+\begin{frame}{Baseline Model Specification}
+  \begin{block}{Main Regression Model}
+    \begin{equation*}
+      \invest_{i,t} = \beta_0 + \beta_1 \lncpu_{c,t-1} + X_{i,t-1}\gamma + \mu_i + \delta_t + \epsilon_{i,t}
+    \end{equation*}
+  \end{block}
+
+  \vspace{0.3cm}
+
+  \textbf{Notation}:
+  \begin{itemize}
+    \item $\invest_{i,t}$: Real investment of firm $i$ in year $t$
+    \item $\lncpu_{c,t-1}$: Logged CPU in city $c$ (lagged)
+    \item $X_{i,t-1}$: Control variables (size, leverage, ROA, etc.)
+    \item $\mu_i$: Firm fixed effects
+    \item $\delta_t$: Year fixed effects
+  \end{itemize}
+
+  \vspace{0.3cm}
+
+  \textbf{Expected Sign}: $\beta_1 < 0$ (higher CPU $\rightarrow$ lower investment)
+\end{frame}
+
+%--- Slide 12: Mechanism Model ---
+\begin{frame}{Mechanism Analysis Model}
+  \begin{block}{Channels Transmission Model}
+    \begin{equation*}
+      M_{i,t} = \alpha_0 + \alpha_1 \lncpu_{c,t-1} + X_{i,t-1}\theta + \mu_i + \delta_t + \nu_{i,t}
+    \end{equation*}
+  \end{block}
+
+  \vspace{0.3cm}
+
+  \textbf{Channel Variables ($M_{i,t}$)}:
+  \begin{itemize}
+    \item \textbf{Cash Flow}: CF1, CF2 (operating cash flow measures)
+    \item \textbf{Financial Constraints}:
+      \begin{itemize}
+        \item SA index (Hadlock \& Pierce, 2010)
+        \item WW index (Whited \& Wu, 2006)
+      \end{itemize}
+  \end{itemize}
+
+  \vspace{0.3cm}
+
+  \textbf{Expected Sign}:
+  \begin{itemize}
+    \item $\alpha_1 < 0$ for CF: CPU reduces cash flow
+    \item $\alpha_1 > 0$ for SA/WW: CPU increases financial constraints
+  \end{itemize}
+\end{frame}
+
+%--- Slide 13: Identification Strategy ---
+\begin{frame}{Identification Strategy}
+  Three complementary approaches for causal inference:
+
+  \vspace{0.3cm}
+
+  \begin{enumerate}
+    \item \textbf{Instrumental Variables (2SLS)}
+      \begin{itemize}
+        \item IV: Extreme high temperature days (HTD)
+        \item Rationale: Weather shocks $\rightarrow$ policy urgency $\rightarrow$ CPU, but not directly to investment
+      \end{itemize}
+
+    \item \textbf{Difference-in-Differences (DID)}
+      \begin{itemize}
+        \item Treatment: High-CPU firms (top 25\% pre-2016)
+        \item Policy shock: 2016 climate policy implementation
+        \item Equation: $\invest = \beta + \delta_1 \text{Treat}_i + \delta_2 \text{Time}_t + \delta_3 (\text{Treat} \times \text{Time})_{i,t} + \epsilon$
+      \end{itemize}
+
+    \item \textbf{Propensity Score Matching + DID}
+      \begin{itemize}
+        \item Match treatment and control firms on pre-treatment characteristics
+        \item Addresses selection bias, strengthens parallel trends
+      \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+%--- Slide 14: Transition Slide ---
+\begin{frame}
+  \centering
+  \Huge \textbf{Part 4: Empirical Results}
+  \vspace{0.5cm}
+
+  \large Key findings from the analyses
+\end{frame}
+
+% =============================================================================
+% PART 4: EMPIRICAL RESULTS
+% =============================================================================
+
+%--- Slide 15: Baseline Results ---
+\begin{frame}{Baseline Results: CPU Reduces Investment}
+  \begin{center}
+    \small
+    \begin{tabular}{lcccc}
+      \toprule
+       & (1) & (2) & (3) & (4) \\
+      \cmidrule(lr){2-5}
+      $\lncpu_{t-1}$ & $-0.007^{***}$ & $-0.006^{**}$ & $-0.005^{*}$ & $\mathbf{-0.004^{**}}$ \\
+       & (0.002) & (0.002) & (0.002) & (0.002) \\
+      Controls & No & No & Yes & Yes \\
+      Year FE & No & Yes & Yes & Yes \\
+      Firm FE & No & No & No & Yes \\
+      \midrule
+      N & 22,585 & 22,585 & 22,585 & 22,585 \\
+      $R^2$ & 0.01 & 0.08 & 0.12 & 0.20 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+
+  \vspace{0.2cm}
+
+  \begin{block}{Interpretation (Col. 4)}
+    A one-unit increase in CPU reduces corporate real investment by \textbf{0.4\%}.
+  \end{block}
+
+  \vspace{0.2cm}
+  \textit{This effect is both statistically and economically significant. Result supports Hypothesis H1.}
+\end{frame}
+
+%--- Slide 16: Robustness Checks ---
+\begin{frame}{Robustness Checks}
+  The baseline result holds across multiple specifications:
+
+  \vspace{0.3cm}
+
+  \begin{enumerate}
+    \item \textbf{Additional Fixed Effects}
+      \begin{itemize}
+        \item Industry FE: $\beta = -0.004^{***}$
+        \item Province FE: $\beta = -0.005^{***}$
+      \end{itemize}
+
+    \item \textbf{Risk Controls}
+      \begin{itemize}
+        \item Physical Risk (lnCPRI): $\beta = -0.003^{**}$
+        \item Economic Policy Uncertainty (FEPU): $\beta = -0.003^{**}$
+      \end{itemize}
+
+    \item \textbf{Subsample Analysis}
+      \begin{itemize}
+        \item Exclude crisis periods (2008--2009, 2020): $\beta = -0.004^{**}$
+      \end{itemize}
+
+    \item \textbf{2SLS Results}
+      \begin{itemize}
+        \item First-stage: HTD $\rightarrow$ CPU (strong, significant)
+        \item Second-stage: CPU $\rightarrow$ $-0.003^{*}$ (significant)
+      \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+%--- Slide 17: DID Results ---
+\begin{frame}{Difference-in-Differences: Parallel Trends Test}
+  \begin{columns}[c]
+    \column{0.55\textwidth}
+      \begin{center}
+        % TikZ diagram for parallel trends
+        \begin{tikzpicture}[scale=0.55]
+          \draw[thick,->] (0,0) -- (8,0) node[right] {\small Year};
+          \draw[thick,->] (0,0) -- (0,4) node[above] {\small Investment};
+          \draw[dashed] (4,0) -- (4,4);
+          \node[above] at (4,4) {\small 2016};
+
+          % Treatment group
+          \draw[red,thick] (1,2.5) -- (4,2.5);
+          \draw[red,thick] (4,2.5) -- (7,1.8);
+          \node[red] at (7.5,1.8) {\small Treatment};
+
+          % Control group
+          \draw[blue,thick] (1,2.5) -- (4,2.5);
+          \draw[blue,thick] (4,2.5) -- (7,2.3);
+          \node[blue] at (7.5,2.3) {\small Control};
+
+          % Pre-period labels
+          \node at (2.5,0.3) {\small Pre};
+          \node at (5.5,0.3) {\small Post};
+        \end{tikzpicture}
+      \end{center}
+
+    \column{0.45\textwidth}
+      \textbf{DID Results}:
+      \begin{itemize}
+        \item Treat$\times$Time: $-0.003^{**}$
+        \item Pre-trend: Not significant (parallel trends satisfied)
+        \item Post-shock: Treatment group invests less
+      \end{itemize}
+
+      \vspace{0.3cm}
+      \textbf{PSM-DID}: After matching, the interaction term remains significant ($\beta = -0.002^{*}$).
+  \end{columns}
+\end{frame}
+
+%--- Slide 18: Mechanism Results ---
+\begin{frame}{Mechanism Analysis}
+  \begin{columns}[t]
+    \column{0.48\textwidth}
+      \begin{block}{Cash Flow Channel}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            DV & $\lncpu_{t-1}$ \\
+            \midrule
+            CF1 & $-0.003^{***}$ \\
+            CF2 & $-0.003^{***}$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+      \end{block}
+
+    \column{0.48\textwidth}
+      \begin{block}{Financial Constraints Channel}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            DV & $\lncpu_{t-1}$ \\
+            \midrule
+            SA (constrained) & $-0.006^{***}$ \\
+            WW (constrained) & $+0.002^{**}$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+      \end{block}
+  \end{columns}
+
+  \vspace{0.3cm}
+
+  \begin{itemize}
+    \item CPU reduces cash flow by 0.3\%
+    \item CPU increases financial constraint indices
+    \item \textbf{Results support Hypotheses H2 and H3}
+  \end{itemize}
+\end{frame}
+
+%--- Slide 19: Heterogeneity: Regional & Ownership ---
+\begin{frame}{Heterogeneity: Regional and Ownership Effects}
+  \begin{columns}[t]
+    \column{0.48\textwidth}
+      \begin{block}{Regional Development}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            Region & $\lncpu$ coeff \\
+            \midrule
+            High GDP & $-0.002$ \\
+            Low GDP & $\mathbf{-0.006^{***}}$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+      \end{block}
+
+    \column{0.48\textwidth}
+      \begin{block}{Ownership Type}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            Owner & $\lncpu$ coeff \\
+            \midrule
+            SOE & $-0.001$ \\
+            Private & $\mathbf{-0.005^{**}}$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+      \end{block}
+  \end{columns}
+
+  \vspace{0.3cm}
+
+  \textbf{Interpretation}:
+  \begin{itemize}
+    \item Firms in less developed regions are more vulnerable (weaker financial markets)
+    \item Private firms more affected than SOEs (better access to credit for SOEs)
+  \end{itemize}
+\end{frame}
+
+%--- Slide 20: Heterogeneity: Industry & ESG ---
+\begin{frame}{Heterogeneity: Industry and ESG Effects}
+  \begin{columns}[t]
+    \column{0.48\textwidth}
+      \begin{block}{Industry Characteristics}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            Industry & $\lncpu$ coeff \\
+            \midrule
+            Manufacturing & $\mathbf{-0.005^{**}}$ \\
+            Labor-intensive & $\mathbf{-0.006^{***}}$ \\
+            Capital-intensive & $-0.003$ \\
+            Tech-intensive & $-0.002$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+      \end{block}
+
+    \column{0.48\textwidth}
+      \begin{block}{ESG Performance}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            ESG & $\lncpu$ coeff \\
+            \midrule
+            Low ESG & $\mathbf{-0.005^{**}}$ \\
+            High ESG & $-0.002$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+      \end{block}
+  \end{columns}
+
+  \vspace{0.3cm}
+
+  \textbf{Interpretation}:
+  \begin{itemize}
+    \item Manufacturing and labor-intensive firms more exposed to policy risk
+    \item High ESG firms show resilience (better preparation, stakeholder support)
+  \end{itemize}
+\end{frame}
+
+%--- Slide 21: Supply Chain Mitigation ---
+\begin{frame}{Supply Chain Mitigation: Trade Credit}
+  Trade credit can help firms mitigate CPU effects:
+
+  \vspace{0.3cm}
+
+  \begin{columns}[t]
+    \column{0.48\textwidth}
+      \begin{block}{As Lender (Receivables)}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            Trade Credit & $\lncpu$ coeff \\
+            \midrule
+            Low & $-0.003^{*}$ \\
+            High & $\mathbf{-0.006^{***}}$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+        \small Amplifies negative effect (liquidity drain)
+      \end{block}
+
+    \column{0.48\textwidth}
+      \begin{block}{As Borrower (Payables)}
+        \begin{center}
+          \small
+          \begin{tabular}{lr}
+            \toprule
+            Trade Credit & $\lncpu$ coeff \\
+            \midrule
+            Low & $-0.004^{**}$ \\
+            High & $-0.001$ \\
+            \bottomrule
+          \end{tabular}
+        \end{center}
+        \small Mitigates negative effect (alternative financing)
+      \end{block}
+  \end{columns}
+
+  \vspace{0.3cm}
+
+  \textbf{Supply Chain Position}: Higher customer concentration $\rightarrow$ stronger negative effect; Higher supplier concentration $\rightarrow$ weaker negative effect
+\end{frame}
+
+%--- Slide 22: Transition Slide ---
+\begin{frame}
+  \centering
+  \Huge \textbf{Part 5: Conclusions \& Policy Implications}
+  \vspace{0.5cm}
+
+  \large Synthesis and takeaways
+\end{frame}
+
+% =============================================================================
+% PART 5: CONCLUSIONS & POLICY IMPLICATIONS
+% =============================================================================
+
+%--- Slide 23: Key Findings Summary ---
+\begin{frame}{Key Findings Summary}
+  \begin{enumerate}
+    \item \textbf{Baseline Finding}
+      \begin{itemize}
+        \item Climate policy uncertainty significantly reduces corporate real investment
+        \item Effect persists across multiple robustness checks
+      \end{itemize}
+
+    \item \textbf{Transmission Channels}
+      \begin{itemize}
+        \item Financial constraints tighten (higher SA/WW indices)
+        \item Cash flow weakens (lower CF1/CF2)
+      \end{itemize}
+
+    \item \textbf{Heterogeneous Effects}
+      \begin{itemize}
+        \item Vulnerable: Low-GDP regions, private firms, manufacturing, labor-intensive industries
+        \item Resilient: High ESG firms, SOEs with strong government connections
+      \end{itemize}
+
+    \item \textbf{Supply Chain Mechanisms}
+      \begin{itemize}
+        \item Trade credit from upstream suppliers mitigates effects
+        \item Lower customer concentration reduces vulnerability
+      \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+%--- Slide 24: Policy Recommendations ---
+\begin{frame}{Policy Recommendations}
+  \begin{columns}[t]
+    \column{0.32\textwidth}
+      \begin{block}{Policy Design}
+        \begin{itemize}
+          \item Maintain stability and transparency
+          \item Phased implementation
+          \item Minimize frequent revisions
+          \item Public disclosure (white papers)
+        \end{itemize}
+      \end{block}
+
+    \column{0.32\textwidth}
+      \begin{block}{Government Support}
+        \begin{itemize}
+          \item Stable subsidies
+          \item Tax incentives
+          \item Green credit programs
+          \item Climate innovation funds
+        \end{itemize}
+      \end{block}
+
+    \column{0.32\textwidth}
+      \begin{block}{Corporate Practices}
+        \begin{itemize}
+          \item Climate risk management
+          \item Enhanced ESG disclosure
+          \item Green transformation
+          \item Supply chain resilience
+        \end{itemize}
+      \end{block}
+  \end{columns}
+
+  \vspace{0.3cm}
+
+  \begin{block}{Bottom Line}
+    Coordinated efforts between governments and firms can mitigate CPU effects, promote green transformation, and achieve sustainable economic development.
+  \end{block}
+\end{frame}
+
+%--- Slide 25: Thank You ---
+\begin{frame}
+  \centering
+  \Huge \textbf{Thank You!}
+
+  \vspace{1cm}
+
+  \Large Questions \& Comments
+
+  \vspace{1cm}
+
+  \normalsize
+  Climate Policy Uncertainty and Corporate Real Investment: Evidence from China
+
+  \vspace{0.3cm}
+  \small Guo, Jiang, Qin, \& Yuan (2025)
+\end{frame}
+
+\end{document}

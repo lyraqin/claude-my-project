@@ -1,0 +1,26 @@
+2026-03-01T07:03:36.745Z [INFO] Bridge URL: none (using native socket)
+2026-03-01T07:03:36.747Z [DEBUG] [Claude in Chrome] Starting MCP server
+2026-03-01T07:03:36.747Z [DEBUG] [Claude in Chrome] MCP server started
+2026-03-01T07:03:36.752Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-01T07:03:36.752Z [INFO] [Claude in Chrome] Adding socket to pool: /var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my
+2026-03-01T07:03:36.752Z [INFO] [Claude in Chrome] Adding socket to pool: /tmp/claude-mcp-browser-bridge-my
+2026-03-01T07:03:36.752Z [INFO] [Claude in Chrome] Attempting to connect to: /var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my
+2026-03-01T07:03:36.752Z [INFO] [Claude in Chrome] Attempting to connect to: /tmp/claude-mcp-browser-bridge-my
+2026-03-01T07:03:36.753Z [INFO] [Claude in Chrome] Socket not found, will be created by server
+2026-03-01T07:03:36.753Z [INFO] [Claude in Chrome] Socket not found, will be created by server
+2026-03-01T07:03:36.754Z [INFO] [Claude in Chrome] Socket error (code: ENOENT): Error: connect ENOENT /var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my'
+}
+2026-03-01T07:03:36.754Z [INFO] [Claude in Chrome] Socket error (code: ENOENT): Error: connect ENOENT /tmp/claude-mcp-browser-bridge-my
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/tmp/claude-mcp-browser-bridge-my'
+}
+2026-03-01T07:03:41.754Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-01T07:03:41.755Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.

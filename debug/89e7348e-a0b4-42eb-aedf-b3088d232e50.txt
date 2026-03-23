@@ -1,0 +1,44 @@
+2026-03-05T08:17:18.775Z [INFO] Bridge URL: none (using native socket)
+2026-03-05T08:17:18.777Z [DEBUG] [Claude in Chrome] Starting MCP server
+2026-03-05T08:17:18.777Z [DEBUG] [Claude in Chrome] MCP server started
+2026-03-05T08:17:18.781Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-05T08:17:18.782Z [INFO] [Claude in Chrome] Adding socket to pool: /var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my
+2026-03-05T08:17:18.782Z [INFO] [Claude in Chrome] Adding socket to pool: /tmp/claude-mcp-browser-bridge-my
+2026-03-05T08:17:18.782Z [INFO] [Claude in Chrome] Attempting to connect to: /var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my
+2026-03-05T08:17:18.782Z [INFO] [Claude in Chrome] Attempting to connect to: /tmp/claude-mcp-browser-bridge-my
+2026-03-05T08:17:18.782Z [INFO] [Claude in Chrome] Socket not found, will be created by server
+2026-03-05T08:17:18.782Z [INFO] [Claude in Chrome] Socket not found, will be created by server
+2026-03-05T08:17:18.783Z [INFO] [Claude in Chrome] Socket error (code: ENOENT): Error: connect ENOENT /tmp/claude-mcp-browser-bridge-my
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/tmp/claude-mcp-browser-bridge-my'
+}
+2026-03-05T08:17:18.784Z [INFO] [Claude in Chrome] Socket error (code: ENOENT): Error: connect ENOENT /var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/var/folders/2n/5wp_9j8n03n0v8lp8s9zcj5m0000gn/T/claude-mcp-browser-bridge-my'
+}
+2026-03-05T08:17:23.783Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-05T08:17:23.783Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.
+2026-03-05T08:47:41.382Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-05T08:47:46.383Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-05T08:47:46.383Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.
+2026-03-05T08:47:47.672Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-05T08:47:52.674Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-05T08:47:52.674Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.
+2026-03-05T08:50:42.617Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-05T08:50:47.617Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-05T08:50:47.617Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.
+2026-03-05T08:51:01.266Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-05T08:51:06.267Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-05T08:51:06.267Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.
+2026-03-05T08:52:49.605Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-05T08:52:54.607Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-05T08:52:54.607Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.
+2026-03-05T09:06:20.831Z [INFO] [Claude in Chrome] Executing tool: tabs_context_mcp
+2026-03-05T09:06:25.833Z [INFO] [Claude in Chrome] No connected sockets in pool
+2026-03-05T09:06:25.833Z [DEBUG] [Claude in Chrome] Server is connected: false. Received tool call: tabs_context_mcp with args: {"createIfEmpty":false}.

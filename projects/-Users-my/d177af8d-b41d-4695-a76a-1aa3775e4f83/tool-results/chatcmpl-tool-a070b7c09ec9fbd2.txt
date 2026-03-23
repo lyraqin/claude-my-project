@@ -1,0 +1,804 @@
+     1→Biao Guo, School of Finance, Renmin University of China,
+     2→<biao.guo@ruc.edu.cn>, 18210571518
+     3→
+     4→Chuyu Jiang, Central University of Finance and Economics,
+     5→<cyu_jiang@email.cufe.edu.cn> 15768628110
+     6→
+     7→Mengyao Qin, Corresponding author, Central University of Finance and
+     8→Economics, qmiaoyy@163.com, 18800161215
+     9→
+    10→Guoqi Yuan, School of Economics Renmin University of China,
+    11→yuangq4987@ruc.edu.cn
+    12→
+    13→Climate Policy Uncertainty and Corporate Real Investment: Evidence from
+    14→China
+    15→
+    16→**Abstract**
+    17→
+    18→In response to escalating climate change, governments worldwide [have
+    19→launched climate policies, often with uncertain timing, intensity, and
+    20→content]{.mark}. This paper investigates the effect of climate policy
+    21→uncertainty (CPU) on corporate real investment, [using city-level CPU
+    22→indices and panel data on Chinese A-share listed firms]{.mark}
+    23→([2007--2023]{.mark}). Results show that elevated CPU significantly
+    24→curtails real investment, a result that is robust to multiple tests.
+    25→Mechanism analysis indicates that CPU restricts investment by
+    26→[tightening financial constraints and weakening cash flows]{.mark}. [The
+    27→negative effects of CPU are stronger for firms in underdeveloped
+    28→regions, private firms, firms in less competitive markets, manufacturing
+    29→firms and those in labor intensive industries,]{.mark} while [ESG-active
+    30→firms exhibit greater resilience]{.mark}. [Within supply chains, firms
+    31→can mitigate the adverse impact of CPU by securing more upstream trade
+    32→credit, limiting downstream liquidity transfers, reducing dependence on
+    33→major customers and enhancing cooperations with suppliers.]{.mark} These
+    34→findings highlight the importance of stable and transparent climate
+    35→policies for sustainable investment and long-term economic development.
+    36→
+    37→**Keywords**: Climate policy uncertainty, Corporate investment,
+    38→Financing constraints, Cash flow
+    39→
+    40→# Introduction
+    41→
+    42→In recent decades, climate change, including frequent extreme events
+    43→like heatwaves, droughts, and floods, is far beyond the scope of
+    44→environmental problems. It has become a profound systemic risk,
+    45→penetrating social and economic structures and undermining their
+    46→stability. The consequences are multifaceted: public health deteriorates
+    47→as extreme weather events intensify, social inequalities deepen as
+    48→vulnerable communities face disproportionate exposure, and productivity
+    49→across key sectors declines, ultimately constraining economic growth
+    50→(Carleton and Hsiang, 2016).
+    51→
+    52→To address these challenges, since the Paris agreement, over 140
+    53→countries have pledged carbon neutrality and actively engage in climate
+    54→governance. As the world's largest carbon emitter and energy consumer,
+    55→China has recently elevated climate governance to a national strategic
+    56→priority, committing to peak carbon emissions by 2030 and achieve carbon
+    57→neutrality by 2060. Sound and well-designed policies play a pivotal role
+    58→in driving the green and low-carbon transformation of the social
+    59→sectors, thereby supporting more sustainable patterns of economic
+    60→growth. [Nevertheless, the timing, intensity, and specifics of climate
+    61→policies remain difficult for micro-level actors to fully anticipate,
+    62→generating significant uncertainty]{.mark}. These policy-related
+    63→uncertainties can alter energy consumption behavior (Chiu and Lee, 2020)
+    64→and undermine the effectiveness of emission-reduction efforts, and even
+    65→impede technological innovation and industrial transformation (Fuss et
+    66→al., 2009).
+    67→
+    68→[Existing studies have largely focused on how physical climate risks
+    69→shape firms' operational activities.]{.mark} Empirical evidence
+    70→indicates that extreme temperature conditions substantially diminish
+    71→corporate revenues (Pankratz et al., 2023), flood events adversely
+    72→affect total factor productivity (Hsiang, 2010), and drought conditions
+    73→have been shown to raise firms' costs of accessing equity financing
+    74→(Huynh et al., 2020). [However, there are also considerable influence of
+    75→climate policy interventions on business performance.]{.mark} For
+    76→example, evidence suggests that the implementation of energy taxes can
+    77→substantially affect industry-level total factor productivity (Gonseth
+    78→et al., 2015), and carbon pricing mechanisms serve as effective
+    79→incentives for corporate carbon mitigation strategies (Kim and Bae,
+    80→2022). Focusing on inherent policy uncertainty, [Ren et al. (2022) use
+    81→CPU index developed by Gavriilidis (2021) and identify firms in the
+    82→mining, manufacturing, and energy production and supply industries as
+    83→their research sample, showing that the inherent uncertainty associated
+    84→with climate policy frameworks constrains free cash flow, and impairs
+    85→R&D investment, thereby further reducing total productivity.]{.mark}
+    86→[However, the study has a relatively limited sample scope and focuses on
+    87→R&D investment as the transmission mechanism, without examining how
+    88→climate policy uncertainty affects firms' overall investment
+    89→opportunities and the mechanisms driving these effects. Moreover, Zhang
+    90→et al. (2025) similarly use the CPU index introduced by Gavriilidis
+    91→(2021) and further identify the negative effect of climate policy
+    92→uncertainty on corporate investment efficiency by harming corporate
+    93→governance, without necessarily diminishing free cash flow. While these
+    94→studies addressed the negative impacts of climate policy risks on firms'
+    95→investment performance and potential mechanisms, they choose the CPU
+    96→index introduced by Gavriilidis (2021), which measures the level of CPU
+    97→in the US, to represent the general global climate risks. This method
+    98→neglects the difference between US and China policy change, such as
+    99→China's consistent approve to Paris agreement, and US'multiple retreat.
+   100→It is more plausible to explore Chinese identical climate policy change
+   101→and its effects on corporate business decisions.]{.mark}
+   102→
+   103→[Notably, Huang and Sun (2024) use keywords searching method to
+   104→construct a China\'s national climate policy uncertainty index and shows
+   105→that higher climate policy uncertainty can lower the level of firms'
+   106→investment, highlighting potential channel of investment
+   107→irreversibility. However, the national index neglects the regional
+   108→climate conditions and policy difference, and constraint further control
+   109→or explore the effects of regional characteristics. Government policy
+   110→and spending significantly affects firms' capital investment, especially
+   111→under uncertainty circumstance (Gulen and Ion, 2016). Besides, prior
+   112→extensive studies suggest that heightened macroeconomic policy
+   113→uncertainty tends to induce firms to delay investment decisions by
+   114→multiple channels, including investment irreversibility (Gulen and Ion,
+   115→2016), financing constraint (Wen et al., 2022), increasing cash holdings
+   116→(Li et al., 2023). It is still essential to consider the regional
+   117→government policy difference, use more concrete data to explore the
+   118→effect of Chinese local policy uncertainty, and examine more potential
+   119→mechanisms.]{.mark}
+   120→
+   121→[What's more, supply chains relationships and firms' bargaining power
+   122→also impacts firms' investment preference by limiting their cash flow
+   123→(Yu et al., 2024).]{.mark} Firms' climate risks exposure can worsen
+   124→their supply chain relationships and operational performance, and this
+   125→effect is related to national adaptation policies and abilities
+   126→(Pankratz and Schiller, 2024). Few studies have investigated the role of
+   127→supply chains relationships on firms' investment decisions under climate
+   128→policy risks.
+   129→
+   130→Given the escalating of climate change and policies, investigating the
+   131→impact of policy risks on firm's investment behavior, depending on the
+   132→understanding of potential channels and the role of supply chains
+   133→relationships, is essential for understanding firms' overall climate
+   134→risk exposure and decision-making process. This can further provide
+   135→important insights for designing effective climate policy tools,
+   136→catalyzing the low carbon transformation of firms, maintaining economic
+   137→vigor, and promoting sustainable green growth.
+   138→
+   139→This study examines the impact and underlying mechanisms of climate
+   140→policy uncertainty on corporate real investment. [Considering that China
+   141→formally released its accounting standards system aligned with
+   142→International Financial Reporting Standards in 2006 and began
+   143→implementing it in 2007, this paper focuses on Chinese A-share listed
+   144→companies over the 2007--2023 period, with 2007 marking the beginning of
+   145→the sample.]{.mark} Our analysis indicates that increases in [climate
+   146→policy uncertainty substantially constrain firms' real investment
+   147→activities, primarily by tightening financing conditions and lowering
+   148→available cash flows. This adverse effect is especially severe for
+   149→companies situated in economically lagging regions, operating in less
+   150→competitive sectors, privately owned, or exhibiting weaker ESG
+   151→performance.]{.mark} [Additionally, firms in the manufacturing
+   152→sector---particularly those in labor-intensive industries---face greater
+   153→exposure to climate risks and demonstrate the strongest sensitivity to
+   154→policy-related uncertainty]{.mark}. Additionally, CPU may affect firms'
+   155→real investment by [impacting trade credits resources. We find that
+   156→firms may alleviate the negative consequences of climate policy
+   157→uncertainty by securing additional trade credit from upstream suppliers
+   158→and limiting liquidity outflows to downstream clients, while lower
+   159→customer and higher supplier concentration is beneficial to maintain
+   160→trade credit advantage.]{.mark}
+   161→
+   162→To mitigate endogeneity concerns, [we exploit the exogenous policy shock
+   163→introduced by Paris Agreement,]{.mark} which is considered as the most
+   164→influential and wide-ranging climate policy globally in the past decade,
+   165→and effectively altered the micro participants' expectations to
+   166→regarding to future climate regulatory risks (Cao et al., 2025). To
+   167→assess the impact of the agreement on corporate investment decisions, we
+   168→utilize a difference-in-differences (DID) framework to compare
+   169→investment behavior prior to and following its implementation. To ensure
+   170→the robustness of our findings, [we further perform dynamic effect
+   171→analyses and implement propensity score matching (PSM) techniques.
+   172→Consistently, the evidence shows that the policy shock significantly
+   173→curtails firms' real investment.]{.mark}
+   174→
+   175→[This paper makes several important contributions]{.mark}. [First, it
+   176→expands the scope of climate change research from physical climate risks
+   177→to local climate policy uncertainty considering regional difference by
+   178→using more concrete city-level index developed by Ma et al. (2023). This
+   179→approach promotes the precision of quantifying the impact of macro-level
+   180→climate policies and provides both theoretical insights and practical
+   181→implications for regional environmental governance and corporate
+   182→decision-making.]{.mark}
+   183→
+   184→[Second, considering the past limited research on the influencing
+   185→mechanisms of climate policy uncertainty, especially concerns about cash
+   186→flow (Li et al., 2023; Zhang et al., 2025), this research uncovers that
+   187→climate policy uncertainty hampers real investment primarily via two
+   188→mechanisms: increased financing restrictions and lower operational cash
+   189→flows. This approach deepens insight into the ways climate transition
+   190→risks shape firm behavior, as well as the interactions among
+   191→climate-related risks, broader macroeconomic uncertainty, and corporate
+   192→decision-making processes.]{.mark}
+   193→
+   194→[Finally, the paper explores multiple cross-section analysis, especially
+   195→about the role of ESG practice and supply chains.]{.mark} [We show that
+   196→firms with stronger ESG practices are more resilient to such
+   197→uncertainty, complementing the research about ESG performance and
+   198→climate risks. The study also reveal that firms' trade credit can be
+   199→another financing sources under climate risks, and concentration levels
+   200→within supply chains can be critical determinants for accessing stable
+   201→trade credits. These findings complement research on supply chain
+   202→relationships, climate risks, and corporate investment, further provide
+   203→valuable implications for corporate supply chain risk
+   204→management.]{.mark}
+   205→
+   206→The study proceeds as follows. Section 2 reviews the relevant literature
+   207→and formulates the research hypotheses. Section 3 describes the data
+   208→sources and empirical methodology. Section 4 presents the baseline
+   209→regression results. Section 5 further investigates a series of
+   210→robustness checks including the policy shock of the *Paris Agreement*.
+   211→Section 6 presents the analysis of underlying mechanisms, followed by
+   212→the cross-sectional analysis in Section 7. Section 8 concludes the
+   213→study.
+   214→
+   215→# Literature review and hypothesis development
+   216→
+   217→Climate change affects not only fundamental economic activities such as
+   218→agricultural production and resource allocation (Kates et al., 1985) but
+   219→also deeply influences societal organization, cultural characteristics,
+   220→and political structures (Schneider et al., 2013). Its impacts permeate
+   221→multiple levels of society and individual life, exhibiting broad,
+   222→profound, and systemic features that shape government policymaking.
+   223→Deryugina (2017) demonstrates that post-disaster government transfer
+   224→payments increase substantially through a longitudinal analysis of
+   225→hurricane events, with their present value far exceeding that of direct
+   226→disaster aid. This sustained fiscal loosening poses risks to public
+   227→finance sustainability, alters interregional resource distribution, and
+   228→ultimately affects economic development in a significant manner.
+   229→Moreover, Wang et al. (2024) find that robust climate policy frameworks
+   230→contribute to lower macro-financial risks, as evidenced by notable
+   231→decreases in debt and currency exposure in developed countries enforcing
+   232→stringent climate regulations. The formulation and execution of climate
+   233→policy is a complex, multidimensional process that demands a dynamic
+   234→balance between economic growth and emission reduction goals, government
+   235→intervention and market mechanisms, as well as national interests and
+   236→regional disparities.
+   237→
+   238→In recent years, the frequency and intensity of extreme climate events
+   239→have continued to rise, compounded by energy security crises triggered
+   240→by escalating geopolitical conflicts and the accelerated advancement of
+   241→global climate governance. Together, these factors create a highly
+   242→uncertain policy environment that profoundly affects corporate
+   243→development strategies (Ren et al., 2022) and energy consumption
+   244→patterns (Gao et al., 2024). Through textual analysis, Gavriilidis
+   245→(2021) develops an index capturing climate policy uncertainty, enabling
+   246→a systematic assessment of its broad economic effects. Bouri et al.
+   247→(2022) show that climate policy uncertainty significantly influences the
+   248→comparative returns of green and brown energy equities, offering new
+   249→perspectives for investment risk management and allocation strategies.
+   250→Meanwhile, Gao et al. (2024) find that such uncertainty amplifies
+   251→extreme risk transmissions between the broader economy and metal prices,
+   252→with consequential effects on commodity market stability. For financial
+   253→institutions, climate policy uncertainty significantly alters banks'
+   254→risk preferences, reducing both active and passive risk-taking and
+   255→increasing bankruptcy risk (Dai and Zhang, 2023). In the industrial
+   256→economy, empirical evidence from (Lin, 2024) indicates that climate
+   257→policy uncertainty substantially reduces urban energy efficiency,
+   258→constraining industrial upgrading and energy transition. At the firm
+   259→level, Ren et al. (2022) demonstrate that climate policy uncertainty
+   260→lowers R&D investment and cash flow, significantly suppressing total
+   261→factor productivity. Collectively, these studies underscore the
+   262→potential threats of climate policy uncertainty to macroeconomic
+   263→stability and financial markets, yet research focusing on its impact on
+   264→corporate performance remains limited.
+   265→
+   266→On the other hand, while a growing body of research has examined how
+   267→climate-related factors influence corporate investment decisions,
+   268→research perspectives remain limited, mainly covering physical climate
+   269→risks and climate policies. Xu et al. (2024) shows that climate risk
+   270→significantly worsens underinvestment and inefficient investment by
+   271→increasing firms' financial constraints and cash holdings. Moreover,
+   272→government plays a key role in investment decisions, as industrial
+   273→development and economic growth closely relate to policy guidance (Liu
+   274→et al., 2022). Existing studies mainly evaluate the effects of specific
+   275→policies. For example, environmental regulations influence firms' green
+   276→investments, with state-owned enterprises generally investing more due
+   277→to a stronger focus on social welfare (Chemmanur et al., 2024). However,
+   278→policy uncertainty notably increases the value of delaying investments.
+   279→Gulen and Ion (2016) point out that this option value of waiting
+   280→suppresses capital investment, particularly for firms facing high
+   281→investment irreversibility. Mo and Liu (2023) provide evidence that
+   282→climate policy uncertainty significantly obstructs firms' high-risk
+   283→digital transformation initiatives. In addition, Chang et al. (2024)
+   284→find that investment decisions in energy firms are adversely influenced
+   285→by climate policy uncertainty, but firms can mitigate these effects by
+   286→optimizing investment decisions and implementing corporate social
+   287→responsibility (CSR) strategies. [Huang and Sun (2024) and Zhang et al.
+   288→(2025) indicate the negative impact of climate policy uncertainty on
+   289→corporate investment through lens of investment irreversibility or
+   290→corporate governance. But they are constrained on the precision of
+   291→measuring local policy risks with neglecting regional differences and
+   292→lack a comprehensive analysis of the influencing mechanisms of climate
+   293→policy uncertainty.]{.mark}
+   294→
+   295→Examining how regional climate policy uncertainty shapes corporate real
+   296→investment and the channels through which it operates allows for a
+   297→better evaluation of regional climate risks and the identification of
+   298→suitable policy measures and firm-level strategies to mitigate their
+   299→negative consequences. Prior research has showed that unclear government
+   300→climate policies substantially increase firms' difficulty in assessing
+   301→prospects, leading them to delay or reduce investments while awaiting
+   302→clearer policy signals (Fuss et al., 2008). Real investment,
+   303→characterized by large capital requirements and strong irreversibility,
+   304→is particularly sensitive to rising uncertainty, which raises firms'
+   305→financing difficulties and significantly suppresses investment
+   306→willingness (Bernanke, 1983). Furthermore, increased uncertainty reduces
+   307→firms' operating income (Binz, 2022) and encourages higher cash holdings
+   308→(Liu et al., 2021), significantly lowering tangible asset investment.
+   309→Based on the above analysis, this study proposes the following
+   310→hypothesis:
+   311→
+   312→***H1: Climate policy uncertainty significantly inhibits corporate real
+   313→investment.***
+   314→
+   315→Rising climate policy uncertainty significantly increases the
+   316→probability of project default, leading investors to adopt more cautious
+   317→risk assessments and demand higher risk premiums to compensate for
+   318→heightened policy risks. These premiums are reflected across various
+   319→financing channels, including the cost of bank debt (Francis et al.,
+   320→2014), bond financing, and equity risk premiums (Pástor and Veronesi,
+   321→2013). As financing costs rise, firms become less willing to invest in
+   322→fixed assets, resulting in a decline in fixed asset investment rates
+   323→(Gilchrist et al., 2014).
+   324→
+   325→At the same time, heightened uncertainty alters banks' risk appetites.
+   326→In response, banks tend to reduce their exposure by limiting credit to
+   327→firms with higher operational risks (Dai and Zhang, 2023), thereby
+   328→further tightening firms' access to external financing. Additionally,
+   329→uncertainty surrounding environmental disclosure requirements often
+   330→leads firms to reduce the quantity and quality of information they
+   331→disclose, exacerbating information asymmetry and increasing credit
+   332→constraints (Chen et al., 2018). Given that external financing
+   333→constitutes a vital source of funds for real investment, any increase in
+   334→financing constraints can substantially influence firms' investment
+   335→choices. Firms with greater financial constraints tend to scale back
+   336→investment more sharply during periods of elevated uncertainty (Campello
+   337→et al., 2010). Based on the above analysis, this study proposes the
+   338→following hypothesis:
+   339→
+   340→***H2: Climate policy uncertainty inhibits corporate real investment by
+   341→amplifying financing constraints.***
+   342→
+   343→Firms' cash flow positions are a critical determinant of their
+   344→investment decisions (Gilchrist and Himmelberg, 1995). Firms facing
+   345→constrained cash holdings or elevated cash flow volatility are more
+   346→likely to pursue conservative financial policies, thereby curbing their
+   347→investment appetite (Hirth and Viswanatha, 2011). Moreover, climate
+   348→policy uncertainty directly and substantially affects firms' operating
+   349→revenues and cash flow positions. Binz (2022) finds that rising
+   350→uncertainty substantially compresses corporate revenues. Ren et al.
+   351→(2022) further demonstrate that increased climate policy uncertainty
+   352→leads firms to incur additional coping costs, thereby reducing their
+   353→free cash flows. In the face of uncertainty, companies often adopt a
+   354→precautionary approach, boosting their cash holdings (Liu et al., 2021)
+   355→or allocate more resources to liquid assets (Kim et al., 1998), in order
+   356→to buffer against potential risks, which in turn results in a reduction
+   357→in real investment. Based on the above analysis, this study proposes the
+   358→following hypothesis:
+   359→
+   360→***H3: Climate policy uncertainty inhibits corporate real investment by
+   361→reducing corporate cash flows.***
+   362→
+   363→# Methodology and data
+   364→
+   365→## 3.1 Model specifications
+   366→
+   367→To alleviate concerns regarding reverse causality, the baseline
+   368→specification incorporates a one-period lag of the key explanatory
+   369→variable---CPU index. Specifically, the model employs the prior year's
+   370→CPU index to account for firms' real investment decisions in the current
+   371→year. Since climate policy formulation and implementation typically
+   372→involve a time lag, and firms' responses to policy changes are also
+   373→delayed, the policy uncertainty measured in the preceding year is more
+   374→likely to influence firms' investment decisions in the current year.
+   375→Introducing lagged variables helps alleviate reverse causality concerns
+   376→and enhances the reliability of the estimation results. Following Kim
+   377→and Kung (2017), t[his study incorporates firm fixed effects as well as
+   378→year fixed effects to control for unobserved heterogeneity at both
+   379→levels.]{.mark}
+   380→
+   381→  -----------------------------------------------------------------------------------------------------------------------------------------------------
+   382→      $${Invest}_{it} = \alpha_{0} + \alpha_{1}{lnCPU}_{it - 1} + \alpha_{c}{Controls}_{it}{+ {Firm}_{i} + {Year}_{t} + \ \varepsilon}_{it}$$   （1）
+   383→  --- ----------------------------------------------------------------------------------------------------------------------------------------- -------
+   384→
+   385→  -----------------------------------------------------------------------------------------------------------------------------------------------------
+   386→
+   387→where ${Invest}_{it}$ is the dependent variable, capturing the real
+   388→investment level of firm *i* in year *t*; the key explanatory variable
+   389→$\ln{CPU}_{t - 1}$ denotes [the natural logarithm of climate policy
+   390→uncertainty in the city]{.mark} where firm *i* is located in year *t*-1.
+   391→${Controls}_{it}$ represents a set of control variables. ${Firm}_{i}$
+   392→and ${Year}_{t}$ denote firm and year fixed effects, respectively.
+   393→$\varepsilon_{it}$ is the error term.
+   394→$\alpha_{0}、\alpha_{1}、\alpha_{c}$ are the regression coefficients,
+   395→where $\alpha_{1}$ captures the marginal effect of climate policy
+   396→uncertainty on firms' real investment.
+   397→
+   398→Previous studies show that higher financing constraints (Campello et
+   399→al., 2010) and lower cash flow levels (Hirth and Viswanatha, 2011)
+   400→significantly suppress firms' investment willingness. To further explore
+   401→the mechanism through which CPU affects corporate physical investment,
+   402→this paper specifies additional regression models to examine the
+   403→underlying mechanisms.
+   404→
+   405→  ------------------------------------------------------------------------------------------------------------------------------------------------
+   406→      $$M_{it} = \gamma_{0} + \gamma_{1}{lnCPU}_{it - 1} + \gamma_{c}{Controls}_{it}\ {+ {Firm}_{i} + {Year}_{t} + \ \varepsilon}_{it}$$   （2）
+   407→  --- ------------------------------------------------------------------------------------------------------------------------------------ -------
+   408→
+   409→  ------------------------------------------------------------------------------------------------------------------------------------------------
+   410→
+   411→where $M_{it}$ represents the financing constraint or cash flow level of
+   412→firm *i* in year *t*; the coefficient $\gamma$ denotes the marginal
+   413→effect of CPU on the firm's financing constraint or cash flow level.
+   414→Other variables are the same as in Equation (1).
+   415→
+   416→Leveraging the exogenous policy shock generated by the *[Paris
+   417→Agreement]{.mark}*, this study employs a DID framework to further
+   418→identify the impact of CPU on firms' real investment. In December 2015,
+   419→196 parties reached a global consensus to limit the rise of global
+   420→temperature and this agreement entered into force on November 4, 2016.
+   421→[Given its strong exogeneity and significant impact on financial markets
+   422→(Cao et al., 2025), the policy serves as a suitable event shock for the
+   423→empirical model.]{.mark}
+   424→
+   425→[This study designates 2016 as the year of policy implementation.
+   426→Following the approach of Chang et al. (2024), we compute each firm's
+   427→average climate policy uncertainty prior to the policy shock and
+   428→classify firms with an average value exceeding 25% as the treatment
+   429→group]{.mark}, capturing those exposed to relatively higher climate
+   430→policy risks. Firms with lower pre-policy values are assigned to the
+   431→control group. We then construct a DID regression model, as specified in
+   432→Equation (3). To further ensure the validity of the model specification
+   433→and the robustness of the empirical findings, we also perform dynamic
+   434→effect analyses and propensity score matching regressions.
+   435→
+   436→+---+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
+   437→|   | $${Invest}_{it} = \beta_{0} + \beta_{1}{Treat}_{i}*{Time}_{t} + \beta_{2}{Treat}_{i} + \beta_{3}{Time}_{t} + \beta_{c}{Controls}_{it}{+ {Firm}_{i} + {Year}_{t} + \ \varepsilon}_{it}$$ | 3.     |
+   438→+===+=========================================================================================================================================================================================+========+
+   439→
+   440→where ${Treat}_{i}$ is a binary variable indicating whether firm *i* is
+   441→in the treatment group (1) or not (0); ${Time}_{t}$ equals one for
+   442→observations from 2016 onward. The coefficient $\beta_{1}$ denotes the
+   443→impact of policy shock on the firm's real investment and all other
+   444→variables are defined as in Equation (1).
+   445→
+   446→## 3.2 Variable selection
+   447→
+   448→### 3.2.1 Dependent variable
+   449→
+   450→The dependent variable employed in this study is corporate real
+   451→investment (*Invest*). Consistent with Kim and Kung (2017), Gulen and
+   452→Ion (2016), real investment is measured as the ratio of cash paid for
+   453→the purchase and construction of fixed assets, intangible assets, and
+   454→other long-term assets to the firm's total assets at the beginning of
+   455→the fiscal year. This measure effectively captures the scale of real
+   456→investment while considering asset levels based on decision-making,
+   457→thereby enhancing comparability across firms of varying scales.
+   458→
+   459→### 3.2.2 Key explanatory variable
+   460→
+   461→The key explanatory variable in this study is the Climate Policy
+   462→Uncertainty index measured at the city level. Ma et al. (2023) manually
+   463→audited news articles from six major Chinese newspapers, including
+   464→*People's Daily* and *Guangming Daily*, to identify content related to
+   465→climate policy uncertainty. They then trained a MacBERT-based machine
+   466→learning model to classify the presence of such content in news texts.
+   467→Using this model, they annotated a large dataset and calculated the
+   468→number of relevant articles published each month. The monthly counts
+   469→were subsequently standardized to construct the CPU Index. This
+   470→methodology captures the introduction of major regulatory policies and
+   471→shifts in policy tone, effectively addressing the subjectivity and
+   472→semantic ambiguity associated with traditional approaches. Accordingly,
+   473→the index provides a more reliable and granular measure of regional CPU.
+   474→
+   475→[To mitigate the skewed distribution (Gulen and Ion, 2016), the original
+   476→CPU index is taken to the natural logarithm]{.mark}. The city-level
+   477→lnCPU index enables the identification of cross-regional variation in
+   478→policy uncertainty.
+   479→
+   480→### 3.2.3 Control variables
+   481→
+   482→In line with the existing literature on corporate real investment (Gulen
+   483→and Ion, 2016; Kim and Kung, 2017; An et al., 2016), we construct the
+   484→set of control variables by considering both firm-level characteristics
+   485→and macro conditions. We include firm size (*Size*), financial leverage
+   486→(*Lev*), operating profits growth rate (*Growth*), return on assets
+   487→(*ROA*), the difference between the actual controller's control rights
+   488→and ownership rights (*Separation*), the total executive compensation
+   489→(*SumSalary*), [*TobinQ*, and the book-to-market ratio (*BM*)]{.mark}.
+   490→And we include [personal income (*PGDP*) and economic growth
+   491→(*GGDP*)]{.mark} at the city level. Detailed definitions of the primary
+   492→variables are presented in Appendix 1.
+   493→
+   494→### 3.2.4 Mechanism variables
+   495→
+   496→To better understand how climate policy uncertainty affects firms' real
+   497→investment decisions, we further examine two potential channels:
+   498→financing constraints and cash flow.
+   499→
+   500→Financing constraints capture the extent to which firms are limited in
+   501→their ability to obtain external capital---an important factor
+   502→influencing investment behavior. Due to information asymmetry, agency
+   503→problems, and transaction costs, firms often face varying degrees of
+   504→difficulty in accessing external financing (Doshi et al., 2018). When
+   505→such constraints are more severe, firms may be forced to scale back
+   506→investment, even when profitable opportunities exist. [We measure
+   507→financing constraints using the SA index (Hadlock and Pierce, 2010) and
+   508→WW index (Whited and Wu, 2006)]{.mark}.
+   509→
+   510→Cash flow (*CF*) serves as a key internal funding source for investment.
+   511→Firms with healthier cash flow positions are generally more flexible in
+   512→pursuing capital expenditures, whereas those with limited internal
+   513→liquidity may adopt more cautious investment strategies (Hirth and
+   514→Viswanatha, 2011). In our analysis, cash flow is measured as the ratio
+   515→of net cash flow from operating activities to total assets at the
+   516→beginning or end of the fiscal year (Gulen and Ion, 2016; Kim and Kung,
+   517→2017).
+   518→
+   519→## 3.3 Data
+   520→
+   521→### 3.3.1 Sample
+   522→
+   523→[The sample is constructed from all Chinese A-share listed firms between
+   524→2007 and 2023.]{.mark} We exclude firms under special treatment (ST,
+   525→\*ST, or PT), firms listed for less than one year, delisted or suspended
+   526→firms, and those in the financial sector. Observations with missing
+   527→values for key variables are also removed. To reduce the impact of
+   528→outliers, all continuous variables are winsorized at the 1% level in
+   529→both tails. After these procedures, the final sample comprises 29,026
+   530→firm-year observations from 3,563 distinct listed firms.
+   531→
+   532→Firm-level data are obtained from the China Stock Market and Accounting
+   533→Research (CSMAR) database. The CPU index is sourced from Global Climate
+   534→Risk Integration Database (GCRID) (Ma et al., 2023).[^1]
+   535→
+   536→### 3.3.2 Descriptive statistics
+   537→
+   538→Table 1 presents the descriptive statistics of the main variables. All
+   539→variable values fall within reasonable ranges, with no evidence of
+   540→significant outliers, indicating good overall data quality. Regarding
+   541→firms\' real investment, the mean is 0.064 with a standard deviation of
+   542→0.069, suggesting notable variation across firms. *[lnCPU]{.mark}* shows
+   543→a mean of 0.415 and a standard deviation of 0.547, indicating
+   544→considerable variation in climate policy uncertainty across regions and
+   545→years. Specifically, Bayannur City in Inner Mongolia Autonomous Region
+   546→recorded the highest CPU value in 2023 (1.342), while the lowest value
+   547→(-1.620) appeared in 2008 in Xiangfan City, Hubei Province. These
+   548→spatial and temporal differences highlight the asynchrony in climate
+   549→policy design and implementation of climate policies across regions in
+   550→China, likely stemming from variations in economic development,
+   551→industrial composition, and environmental governance pressures. As for
+   552→the control variables, significant variation is observed across firms,
+   553→indicating that the sample encompasses a diverse set of firms.
+   554→
+   555→\[Insert Table 1 here\]
+   556→
+   557→Figure 1 illustrates the average trend of the natural logarithm of the
+   558→city-level climate policy uncertainty index over time, highlighting the
+   559→dynamic evolution of China's climate policy environment in recent years.
+   560→As shown in the figure, the lnCPU index began to exhibit noticeable
+   561→upward trend and variations in most years. The upward trend of the lnCPU
+   562→index reflects the increased frequency and complexity of climate-related
+   563→policy announcements, as well as the growing richness and diversity of
+   564→policy content. The variation suggests that firms are facing
+   565→increasingly uncertain and dynamic regulatory environment, requiring
+   566→enhanced adaptability and more sophisticated risk management strategies.
+   567→
+   568→\[Insert Figure 1 Here\]
+   569→
+   570→# Baseline regression
+   571→
+   572→Table 2 reports the regression results examining the effect of CPU on
+   573→corporate real investment. Column (1) shows the regression results for
+   574→the effect of *lnCPU* on *Invest* without any control variables or fixed
+   575→effects, while Columns (2), (3) and (4) report the corresponding results
+   576→by incorporating year fixed effects, control variables and firm fixed
+   577→effects, respectively. In all columns, the coefficients of *lnCPU* are
+   578→significantly negative at the 1% or 5% level, suggesting that higher
+   579→climate policy uncertainty dampens firms\' real investment activities.
+   580→
+   581→In Column (4), after controlling for time trends, individual effects,
+   582→and other relevant covariates, the coefficient estimate for *lnCPU* is
+   583→--0.004 and statistically significant at the 5% level. This implies that
+   584→one unit increase in the previous year's *CPU* index leads to a 0.4%
+   585→reduction in the current level of corporate real investment, which is
+   586→also economically meaningful. Overall, the results support our
+   587→conjecture and validates Hypothesis H1.
+   588→
+   589→The regression results for all control variables in Column (4) reveal
+   590→substantial heterogeneity in the determinants of corporate real
+   591→investment. Firm size (*Size*) , financial leverage (*Lev*), return on
+   592→assets (*ROA*), operating profits growth rate (Growth) and executive
+   593→compensation (*SumSalary*) are positively and significantly associated
+   594→with real investment at the 1% or 5% level. These findings indicate that
+   595→larger firms and those with higher profitability possess greater
+   596→internal funding capacity for investment, firms with higher leverage are
+   597→more likely to expand business operations, and firms with stronger
+   598→managerial incentives exhibit a greater willingness to undertake
+   599→investment risks.
+   600→
+   601→\[Insert Table 2 here\]
+   602→
+   603→# Robustness checks
+   604→
+   605→To ensure the reliability of the research findings, we conduct a series
+   606→of robustness checks. All test results consistently support the
+   607→conclusions derived from the baseline regressions.
+   608→
+   609→First, we add industry and province fixed effects separately to control
+   610→other industrial and regional factors that affect firms' investment. The
+   611→regression results are reported in Columns (1) and (2) of Table 3. In
+   612→both cases, the coefficient on lnCPU remains significantly negative,
+   613→confirming the robustness of the baseline findings regarding the adverse
+   614→impact of climate policy uncertainty on firms' real investment.
+   615→
+   616→In addition, physical climate risks, like heavy rainfalls and rising sea
+   617→level pose new challenges to firms' operation, affects their financing
+   618→costs and capital structure, further affect their investment (Ginglinger
+   619→and Moreau, 2023). [So, we introduce city-level climate physical risk
+   620→index (*CPRI*) developed by (Guo et al., 2024) and take the logarithm to
+   621→gain *lnCPRI* as a new control variable]{.mark}.[^2] Considering the
+   622→well-documented impact of economic policy uncertainty on corporate
+   623→investment decisions (Liu et al., 2022), we incorporate a firm-level
+   624→measure of economic policy uncertainty perception (*FEPU*) as an
+   625→additional control variable. This variable is constructed following the
+   626→methodology of (Baker et al., 2016), by manually compiling lists of
+   627→economic policy terms and uncertainty terms. Using Python-based web
+   628→crawlers and the Jieba word segmentation tool, we identify sentences in
+   629→corporate annual reports that simultaneously contain terms from both
+   630→lists. The *FEPU* index is then calculated as the proportion of
+   631→uncertainty-related terms within these sentences to the total word
+   632→count. The regression results reported in Column (3) and (4) of Table 3
+   633→shows that the coefficient on CPU remains significantly negative after
+   634→controlling for *lnCPRI* or *FEPU*, reinforcing the robustness of the
+   635→main findings.
+   636→
+   637→To further address potential biases from major external shocks, we
+   638→exclude observations from the 2010 global financial crisis and the 2020
+   639→COVID-19 pandemic. The regression results in Column (5) of Table 3
+   640→indicate that, even after removing these exceptional periods, the
+   641→adverse effect of CPU on firms' real investment remains statistically
+   642→significant. This finding further corroborates our baseline findings.
+   643→
+   644→\[Insert Table 3 here\]
+   645→
+   646→Although the core explanatory variable has been lagged by one period in
+   647→the baseline regression, the model may still face endogeneity concerns
+   648→stemming from two main sources: first, firms' production activities can
+   649→affect the environment, which in turn influences climate policy
+   650→formulation, resulting in potential reverse causality; second, omitted
+   651→variable bias may arise from unobserved factors that simultaneously
+   652→impact both climate policy uncertainty and corporate real investment.
+   653→
+   654→[To further address these endogeneity issues, this study uses the number
+   655→of extreme high-temperature days (*HTD*) of a city, as an instrumental
+   656→variable for climate policy uncertainty and applies a two-stage least
+   657→squares (2SLS) regression approach.]{.mark}[^3] [The rationale for this
+   658→instrument is twofold: firstly, extreme weather events directly reflect
+   659→climate change and embody physical climate risks. Since climate policies
+   660→are formulated in response to climate change, an increase in extreme
+   661→temperature days likely motivates policymakers to take action. Secondly,
+   662→hot weather shocks are exogenous natural phenomena, unaffected by
+   663→individual firms' investment decisions. This instrument is not directly
+   664→correlated with firms' productivity and profitability (Addoum et al.,
+   665→2020), further related to firm's investment, but influences corporate
+   666→investment only indirectly via climate policy formulation and firms'
+   667→real investment, thereby satisfying the exogeneity requirement.]{.mark}
+   668→
+   669→[By introducing instrumental variable techniques, this approach
+   670→mitigates reverse causality and reduces bias from omitted variables,
+   671→yielding more reliable and robust empirical evidence on the effect of
+   672→CPU on corporate real investment.]{.mark}
+   673→
+   674→[Table 4 presents the results of the 2SLS regression. First, endogeneity
+   675→tests indicate that CPU suffers from significant endogeneity,
+   676→necessitating the use of instrumental variables for estimation. Second,
+   677→the LM and F statistics both exceed the critical value of 10 by a large
+   678→margin, indicating a strong association between the selected instruments
+   679→and CPU, thus ruling out weak instrument concerns and ensuring model
+   680→identification validity. In the first-stage regression (Column 1), the
+   681→instrumental variable---extreme high temperature days (*HTD*)---is
+   682→positively and significantly associated with *lnCPU* at the 1% level,
+   683→indicating strong explanatory power. The second-stage regression results
+   684→(Column 2) show that the instrumented *lnCPU* has a significantly
+   685→negative effect on corporate physical investment, significant at the 10%
+   686→level, further confirming that climate policy uncertainty substantially
+   687→inhibits firms' physical investment.]{.mark}
+   688→
+   689→[\[Insert Table 4 here\]]{.mark}
+   690→
+   691→[To further rule out potential interference from exogenous policies
+   692→during the study period, this study treats the announcement of Paris
+   693→Agreement in 2015 as an exogenous policy shock. A DID model is employed
+   694→to further examine the impact of climate policy uncertainty on firms'
+   695→tangible investment. The year 2016 is selected as the policy
+   696→implementation year, and following Chang et al. (2024), the firms with
+   697→an average value of climate policy uncertainty exceeding 25% before 2016
+   698→are selected as the treatment group. The other firms with lower values
+   699→prior to the policy shock are designed as the control group.]{.mark}
+   700→
+   701→[Column (1)]{.mark} [in]{.mark} [Panel A]{.mark} [of]{.mark} [Table 5
+   702→presents the regression results for the DID model with fixed effects but
+   703→without any control variables, whereas Column (2) reports the
+   704→corresponding results including control variables. In both columns, the
+   705→coefficient on the interaction term Treat × Time is significantly
+   706→negative at the 5% level, indicating that the policy shock exerts a
+   707→stronger adverse effect on the treatment group compared to the control
+   708→group. These results further corroborate our main findings.]{.mark}
+   709→
+   710→[\[Insert Table 5 here\]]{.mark}
+   711→
+   712→[The DID model requires the parallel trends assumption to hold.
+   713→Following the approach of Beck et al. (2010) and Luo et al. (2025), this
+   714→study applies truncation for samples far from the policy implementation
+   715→date. Years after 2021 are treated as the +6 period, and years before
+   716→2009 are treated as the -6 period, with the year of 2015 as the
+   717→baseline, to conduct a dynamic effect test for the parallel trend
+   718→assumption. Figure 2 presents the results of the parallel trends test,
+   719→where the estimated coefficients after the policy were demeaned. Before
+   720→the policy implementation, the coefficients are near zero and the 90%
+   721→confidence intervals include zero, suggesting no significant differences
+   722→in both groups, thus satisfying the parallel trends assumption. After
+   723→the policy, the investment levels of firms in the treatment group
+   724→declined significantly compared to the control group, demonstrating the
+   725→policy's negative impact.]{.mark}
+   726→
+   727→[\[Insert Figure 2 Here\]]{.mark}
+   728→
+   729→[To further validate the robustness of the findings, this study employs
+   730→the PSM method to balance differences between the treatment and control
+   731→groups. PSM is used before DID to reduce selection bias and ensure
+   732→comparability within both groups, strengthening the parallel trends
+   733→assumption and the credibility of causal estimates.
+   734→Specifically,]{.mark} [all]{.mark} [control variables]{.mark} [in the
+   735→model are used to perform 1:1 nearest-neighbor matching on the
+   736→cross-section, retaining only samples that have no-zero weight for the
+   737→subsequent regression analysis. After PSM,]{.mark} [Panel B of Table 5
+   738→indicates no statistically significant differences in the matching
+   739→variables across groups.]{.mark} [In Panel A,]{.mark} [column (3) and
+   740→(4) report regression results]{.mark} [indicating that after PSM
+   741→matching, the coefficient of the *Treat\*Time* interaction term remains
+   742→significantly negative at the 10% level. The result further confirms the
+   743→inhibitory effect of CPU on firms' tangible investment and strengthens
+   744→the credibility of the baseline findings.]{.mark}
+   745→
+   746→# Mechanism analysis
+   747→
+   748→The baseline regression reveals that heightened climate policy
+   749→uncertainty significantly reduces firms\' real investment. To further
+   750→uncover the underlying mechanisms and validate our hypotheses, this
+   751→study applies Model (2) to perform the mechanism analysis.
+   752→
+   753→The results are shown in Table 6. The regression results are after
+   754→controlling for time and firm fixed effects, as well as other relevant
+   755→variables. [Columns (1) and (2) show that the coefficients of two
+   756→measures of cash flow level (CF1 and CF2) are significantly negative,
+   757→while Columns (3) and (4) show that coefficients of financial constraint
+   758→measured by *KZ and WW* index are significantly negative and positive
+   759→respectively]{.mark}. Specifically, a one-unit increase in CPU is
+   760→associated with an 0.3% decrease in firms' cash flow levels, 0.6%
+   761→decrease in SA index and 0.2% increase in WW index.
+   762→
+   763→Additionally, external financing and internal cash flow are critical
+   764→funding sources for corporate investment. And the exacerbation of
+   765→information asymmetry and the increase in financing costs often lead to
+   766→intensified financing constraints, which directly suppress firms'
+   767→investment propensity and reduce their investment levels (Campello et
+   768→al., 2010; Gilchrist et al., 2014). Meanwhile, firms with poor cash flow
+   769→conditions tend to adopt more conservative operational strategies,
+   770→thereby weakening their investment willingness (Hirth and Viswanatha,
+   771→2011).
+   772→
+   773→Collectively, these results suggest that the negative impact of CPU on
+   774→real investment operates through both heightened financial constraints
+   775→and reduced internal liquidity, supporting our hypothesis H2 and
+   776→hypothesis H3.
+   777→
+   778→\[Insert Table 6 here\]
+   779→
+   780→# Cross-sectional analysis
+   781→
+   782→To account for the potential heterogeneity in the effect of CPU on
+   783→corporate real investment, we conduct subgroup regressions based on
+   784→regional conditions and industry competition intensity. Results are
+   785→presented in Table 7.
+   786→
+   787→First, there is significant regional variation in both climate-related
+   788→conditions and the dynamics of climate policy uncertainty across China
+   789→(Ma et al., 2023). Moreover, regions differ in their levels of economic
+   790→development and access to external finance (Lin et al., 2017). To
+   791→capture such differences, we classify cities into high- and low-growth
+   792→regions according to their GDP levels. Columns (1) and (2) of Table 7
+   793→show that the adverse impact of CPU on corporate investment is
+   794→significantly stronger in low-GDP regions. This finding suggests that
+   795→firms in less developed areas---characterized by weaker financial
+   796→markets and greater policy risk exposure---are more susceptible to the
+   797→detrimental effects of CPU.
+   798→
+   799→Second, industry competition influences firms' information acquisition
+   800→capabilities and their ability to evaluate investment opportunities. [In
+
+<system-reminder>
+Whenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.
+</system-reminder>

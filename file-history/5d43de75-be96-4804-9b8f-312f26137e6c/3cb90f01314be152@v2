@@ -1,0 +1,197 @@
+# Manuscript Review: Climate Policy Uncertainty and Corporate Real Investment: Evidence from China
+
+**Date:** 2026-03-02
+**Reviewer:** review-paper skill
+**File:** papers/Climate Policy Uncertainty.docx
+
+---
+
+## Summary Assessment
+
+**Overall recommendation:** Revise & Resubmit
+
+This paper investigates the causal effect of climate policy uncertainty (CPU) on corporate real investment using a novel city-level CPU index and a comprehensive panel of Chinese A-share listed firms (2007–2023). The authors find that elevated CPU significantly reduces corporate investment, with heterogeneous effects by region, ownership type, industry characteristics, and ESG performance. They further identify financial constraints and cash flow reduction as transmission channels, and document supply chain trade credit as a mitigation mechanism.
+
+The paper makes several valuable contributions: (1) it provides the first study using city-level climate policy uncertainty indices for corporate finance analysis in China; (2) it employs multiple identification strategies including 2SLS with weather-based IV, DID, and PSM-DID; (3) it reveals heterogeneous vulnerability across firm types and industries; and (4) it uncovers an underexplored supply channel mechanism through trade credit.
+
+However, several concerns must be addressed before publication. The most significant issues include: questionable identification strategy for the DID design (weak theoretical justification for 2016 policy shock), lack of clarity on exogeneity of the instrumental variable (extreme high temperature days), limited discussion of potential omitted variable bias from regional economic shocks, and insufficient attention to serial correlation in standard errors. The paper would also benefit from more precise theoretical grounding, clearer presentation of the contribution relative to the growing literature on climate policy uncertainty, and improved writing quality.
+
+---
+
+## Strengths
+
+1. **Novel Data:** The city-level CPU index provides richer spatial variation than national-level measures, allowing for meaningful cross-sectional heterogeneity analysis
+
+2. **Multiple Identification Strategies:** The paper employs OLS with firm fixed effects, 2SLS with weather-based IV, and DID/PSM-DID, providing multiple angles on causal inference
+
+3. **Comprehensive Heterogeneity Analysis:** The paper systematically examines effects across regions, ownership types, industries, ESG performance, trade credit, and supply chain concentration
+
+4. **Supply Channel Mechanism:** The exploration of trade credit as a mitigating factor is novel and adds meaningful insight beyond the standard financial constraints/cash flow channel
+
+5. **Large Sample and Long Panel:** The 2007–2023 period provides substantial coverage across different climate policy phases, including pre- and post-Paris Agreement
+
+---
+
+## Major Concerns
+
+### MC1: Weak identification of "policy shock" in DID design
+- **Dimension:** Identification
+- **Issue:** The DID design uses 2016 as a policy shock date without clear theoretical justification. The paper cites "the Paris Agreement" and "2016 climate policy implementation" but does not explain what specific policy event occurred in China in 2016 that would plausibly create a discrete shock to CPU. The Paris Agreement was signed in 2015, and China's major climate policies (carbon trading pilots, renewable energy targets) had been ongoing since 2011. Without a clear exogenous shock, the parallel trends assumption is difficult to justify.
+- **Suggestion:** Either (a) more clearly identify the specific 2016 policy event and justify its exogeneity, or (b) drop the DID design and emphasize the city-level CPU variation with firm fixed effects and IV strategies
+- **Location:** Section 3.2, p. 55-57; Table 5
+
+### MC2: Potentially weak instrument (extreme high temperature days)
+- **Dimension:** Identification / Econometrics
+- **Issue:** High temperature days (HTD) is used as an instrument for CPU on the theoretical grounds that "weather shocks affect policy urgency but not investment directly." This exclusion restriction is questionable. Extreme heat can affect:
+  - Firm operations (reduced productivity, facility closures)
+  - Demand patterns (energy consumption, consumer behavior)
+  - Regional economic activity
+  The first-stage F-statistic of 47.05 is strong, but the Cragg-Donald Wald F p-value of 0.06 suggests borderline weak instrument concerns at conventional thresholds.
+- **Suggestion:** (a) Provide more robust justification for exclusion restriction, (b) include HTD directly as a control in the second stage to test for direct effects, (c) consider additional instruments (e.g., natural disasters unrelated to economic activity)
+- **Location:** Section 3.3, p. 57-59; Table 4
+
+### MC3: Potential omitted variable bias from regional confounders
+- **Dimension:** Identification
+- **Issue:** The city-level CPU index may be correlated with unobserved regional characteristics that also affect corporate investment. While the paper includes firm fixed effects and city-level controls (PGDP, GGDP), it does not account for:
+  - Regional political leadership changes that affect firm confidence
+  - Local fiscal policy variations
+  - Infrastructure projects correlated with climate policy timing
+  - City-level environmental enforcement priorities
+- **Location:** Section 2; throughout empirical strategy
+
+### MC4: Standard errors may be understated due to spatial correlation
+- **Dimension:** Econometrics
+- **Issue:** The paper clusters standard errors at the firm level only. Given that the Treatment variable (CPU) varies at the city level and firms within the same city may experience correlated shocks (local governance, regional economic conditions), there may be unaddressed spatial correlation. Clustering at the city level or using multi-way clustering (firm and city) would be more appropriate.
+- **Suggestion:** Re-estimate with city-level clustering and/or two-way clustering (firm × city, firm × year) and report both specifications
+- **Location:** All regression tables; Table note conventions
+
+### MC5: Contribution not clearly differentiated from Huang and Sun (2024)
+- **Dimension:** Literature / Argument
+- **Issue:** The paper cites Huang and Sun (2024) which also examines climate policy uncertainty and firm investment. The introduction and literature review do not clearly articulate what is novel about this paper relative to that study. Huang and Sun (2024) appears to use similar research design and Chinese firm data. The unique contribution must be made more explicit.
+- **Suggestion:** Clearly state the differences: (a) city-level vs. national CPU variation, (b) longer time horizon (2007–2023 vs unspecified), (c) supply chain mechanism not examined in prior work, (d) ESG heterogeneity
+- **Location:** Introduction, p. 18-22; Conclusion
+
+---
+
+## Minor Concerns
+
+### mc1: Abstract grammar and phrasing
+- **Issue:** "cooperations" → "cooperation"; "labor intensive industries" → "labor-intensive industries"; missing commas in author affiliations
+- **Suggestion:** Proofread abstract and correct standard grammar errors
+
+### mc2: Notation inconsistency
+- **Issue:** Variable definitions use both "Ln" (for SA index) and "ln" (for CPU, CPRI, etc.) inconsistently
+- **Suggestion:** Standardize to lowercase "ln" throughout for natural logs
+
+### mc3: Table formatting inconsistencies
+- **Issue:** Table 5 Panel A column numbering uses () and （） brackets inconsistently; Table 6 uses （）; Table notes have different phrasing conventions
+- **Suggestion:** Standardize bracket formatting and table note language
+
+### mc4: Missing theoretical model
+- **Issue:** The paper mentions "real options theory" and D'Angelo et al. (2021) but does not present a formal model. A simple theoretical framework would strengthen the mechanism section.
+- **Suggestion:** Consider adding a brief model illustrating how CPU affects investment through the option value of waiting
+
+### mc5: ESG timing concerns
+- **Issue:** The ESG heterogeneity analysis treats ESG as a time-invariant characteristic, but ESG ratings change over time. The paper should clarify whether it uses time-variant or static ESG measures.
+- **Suggestion:** Clarify ESG measurement; if time-variant, explain how changes are incorporated
+
+### mc6: Conclusion typo
+- **Issue:** "supply chain ships" appears to be a typo for "supply chain relationships"
+- **Suggestion:** Correct to "supply chain perspective" or "supply chain context"
+
+---
+
+## Referee Objections
+
+### RO1: What is the exogenous policy shock in 2016?
+**Why it matters:** The DID design requires a clear, exogenous shock that affects treatment and control groups differently. Without a well-identified shock, the parallel trends assumption cannot be justified, and the DID results are not credible.
+
+**How to address it:** (1) Provide specific documentation of the 2016 Chinese climate policy event being studied; (2) Discuss why this event created a discrete shock to CPU; (3) Demonstrate that the shock was exogenous to firm investment decisions; (4) Consider alternative DID specifications using better-identified policy events (e.g., 2013 carbon trading pilot announcements, 2017 nationwide carbon market launch)
+
+### RO2: Does extreme heat affect investment directly?
+**Why it matters:** If hot days affect firm operations, productivity, or demand, then the exclusion restriction for the IV is violated, and the 2SLS estimates are invalid. This could fatally undermine the causal claim.
+
+**How to address it:** (1) Include HTD directly as a control in the second-stage regression; if HTD is significant, the IV is not valid; (2) Use additional weather-based instruments that are less plausibly correlated with economic activity (e.g., precipitation extremes, natural disasters); (3) Provide empirical evidence that HTD does not correlate with investment in the pre-period
+
+### RO3: Are results robust to serial correlation and spatial clustering?
+**Why it matters:** With 16 years of panel data and 29,026 observations clustered in cities, standard errors clustered only at the firm level are likely understated, leading to potentially spurious statistical significance.
+
+**How to address it:** Report results with: (1) City-level clustered SEs; (2) Two-way clustered SEs (firm × city, firm × year, or city × year); (3) Driscoll-Kraay standard errors for panel data; (4) Wild cluster bootstrap for small number of cities
+
+### RO4: Why does this country matter beyond China?
+**Why it matters:** For a top-tier international journal, the contribution must generalize beyond a single-country case study. The paper does not sufficiently discuss external validity or mechanisms that would apply to other emerging markets or developed economies.
+
+**How to address it:** (1) Add a section discussing how findings might generalize to other contexts; (2) Highlight which components of the Chinese setting are unique (e.g., state-owned enterprises) vs. universal (climate policy effects on investment); (3) Discuss policy implications for other countries considering climate policy frameworks
+
+### RO5: What is the policy relevance of the findings?
+**Why it matters:** Academic papers on climate policy should have clear policy implications. The conclusion offers general recommendations but lacks specific, actionable policy guidance based on the empirical results.
+
+**How to address it:** (1) Use the estimated magnitudes to quantify the investment effects of reducing CPU; (2) Identify which policy design features (e.g., timing transparency, announcement clarity) would be most impactful; (3) Discuss the trade-offs between policy stringency and policy uncertainty
+
+---
+
+## Specific Comments
+
+**Abstract, Line 13:** "enhancing cooperations with suppliers" → "enhancing cooperation with suppliers"
+
+**Abstract, Line 13:** "labor intensive industries" → "labor-intensive industries"
+
+**Author Affiliations, Lines 3-6:** Phone numbers should be removed; add missing comma in line 6: "School of Economics, Renmin University of China"
+
+**Introduction, Line 31:** "US'multiple retreat" → "the U.S.'s multiple retreats" or "the United States' multiple retreats"
+
+**Introduction, Line 31:** "China's consistent approve to Paris agreement" → "China's consistent approval of the Paris Agreement"
+
+**Literature Review:** Should more clearly cite Huang and Sun (2024) as the most directly comparable study and articulate differences
+
+**Methodology, Section 2:** Consider adding a brief formal model of investment under climate policy uncertainty (real options framework)
+
+**Methodology, Section 3.2:** Provide more detail on the 2016 policy shock—what specific event occurred? Was it exogenous?
+
+**Methodology, Section 3.3:** Discuss potential direct effects of HTD on investment operations
+
+**Table 3, Column 5:** Excluding "specific years" is vague—specify which years were excluded and why
+
+**Table 5, Note:** "This table presents the results..." → "This table reports..." (correct "reposts" typo)
+
+**Table 6, Note:** "CF1 and CF2 for cash flow, and the KZ and WW indices" → table columns show SA and WW, not KZ. Update note.
+
+**Table 7, Title:** "Cross-sectional Analysis in the Regional Conditions" → "Cross-sectional Analysis of Regional Conditions" (preposition error repeated in multiple tables)
+
+**Table 9, Column 2:** "Labor intensive" → "Labor-intensive" (hyphenated compound adjective)
+
+**Conclusion, Line 127:** "supply chain ships" → "supply chain relationships" or "supply chain context"
+
+**Conclusion, Line 128:** "diversify their customers base" → "diversify their customer base"
+
+**References, Line 191:** "Scientific Data, 10(1), 881" — confirm Chinese journal format
+
+**Appendix 1, Line 1990:** "Variable definitions / Definition of variables" — duplicate heading, remove one
+
+**Appendix 1, Line 2022:** SA formula uses "Ln" but other variables use "ln" — standardize
+
+---
+
+## Summary Ratings
+
+| Dimension | Rating (1-5) |
+|-----------|-------------|
+| Argument Structure | 3 |
+| Identification | 2 |
+| Econometrics | 3 |
+| Literature | 3 |
+| Writing | 3 |
+| Presentation | 3 |
+| **Overall** | **3** |
+
+**Interpretation:**
+- 5: Excellent; ready for top-tier publication
+- 4: Strong; minor revisions needed
+- 3: Solid; moderate revisions needed
+- 2: Weak; major revisions needed
+- 1: Very weak; likely reject
+
+---
+
+*Report generated: 2026-03-02*
+*Skill: review-paper*

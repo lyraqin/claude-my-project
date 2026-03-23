@@ -1,0 +1,797 @@
+2026-02-28T12:32:31.807Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-02-28T12:32:31.807Z [DEBUG] MDM settings load completed in 3ms
+2026-02-28T12:32:31.846Z [DEBUG] [init] configureGlobalMTLS starting
+2026-02-28T12:32:31.846Z [DEBUG] [init] configureGlobalMTLS complete
+2026-02-28T12:32:31.846Z [DEBUG] [init] configureGlobalAgents starting
+2026-02-28T12:32:31.846Z [DEBUG] [init] configureGlobalAgents complete
+2026-02-28T12:32:31.878Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-02-28T12:32:31.880Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-02-28T12:32:31.881Z [DEBUG] [STARTUP] Running setup()...
+2026-02-28T12:32:31.888Z [DEBUG] Git remote URL: null
+2026-02-28T12:32:31.888Z [DEBUG] No git remote URL found
+2026-02-28T12:32:31.889Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/my/.claude/skills, project=[]
+2026-02-28T12:32:31.890Z [DEBUG] Error log sink initialized
+2026-02-28T12:32:31.894Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default, Profile 1
+2026-02-28T12:32:31.895Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-02-28T12:32:31.895Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-02-28T12:32:31.895Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-02-28T12:32:31.895Z [DEBUG] Total plugin skills loaded: 0
+2026-02-28T12:32:31.895Z [DEBUG] Total plugin commands loaded: 0
+2026-02-28T12:32:31.895Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-02-28T12:32:31.896Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-02-28T12:32:31.896Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 5 bundled skills
+2026-02-28T12:32:31.907Z [DEBUG] [STARTUP] setup() completed in 26ms
+2026-02-28T12:32:31.907Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-02-28T12:32:31.907Z [DEBUG] Total plugin agents loaded: 0
+2026-02-28T12:32:31.908Z [DEBUG] [STARTUP] Commands and agents loaded in 1ms
+2026-02-28T12:32:31.920Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-02-28T12:32:31.924Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-02-28T12:32:31.950Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-02-28T12:32:31.953Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-02-28T12:32:33.928Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-02-28T12:32:33.929Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-02-28T12:32:33.929Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-02-28T12:32:33.930Z [DEBUG] [STARTUP] showSetupScreens() completed in 2010ms
+2026-02-28T12:32:33.930Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-02-28T12:32:33.930Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-02-28T12:32:33.930Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-02-28T12:32:33.931Z [DEBUG] Total LSP servers loaded: 0
+2026-02-28T12:32:33.931Z [ERROR] Failed to fetch org fast mode status, defaulting to disabled: Error: No auth available
+2026-02-28T12:32:33.931Z [DEBUG] [STARTUP] MCP configs loaded in 2053ms
+2026-02-28T12:32:33.933Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-02-28T12:32:33.933Z [DEBUG] LSP manager initialized with 0 servers
+2026-02-28T12:32:33.934Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-02-28T12:32:33.934Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:32:33.934Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-02-28T12:32:33.934Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-02-28T12:32:33.934Z [DEBUG] LSP server manager initialized successfully
+2026-02-28T12:32:33.934Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-02-28T12:32:33.935Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-02-28T12:32:33.937Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772281953937
+2026-02-28T12:32:33.937Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:32:33.937Z [DEBUG] Temp file written successfully, size: 4322 bytes
+2026-02-28T12:32:33.937Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:32:33.937Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772281953937 to /Users/my/.claude.json
+2026-02-28T12:32:33.937Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:32:33.970Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-02-28T12:32:34.012Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-02-28T12:32:34.012Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-02-28T12:32:34.013Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-02-28T12:32:34.013Z [DEBUG] performStartupChecks called
+2026-02-28T12:32:34.013Z [DEBUG] Starting background plugin installations
+2026-02-28T12:32:34.016Z [DEBUG] No CLAUDE.md/rules files found
+2026-02-28T12:32:34.017Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-02-28T12:32:34.018Z [DEBUG] performBackgroundPluginInstallations called
+2026-02-28T12:32:34.018Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-02-28T12:32:34.018Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-02-28T12:32:34.018Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-02-28T12:32:34.033Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-02-28T12:32:34.038Z [DEBUG] Watching for changes in setting files /Users/my/.claude/settings.json, /Users/my/.claude/settings.local.json...
+2026-02-28T12:32:34.043Z [DEBUG] Security messages are fresh (<1h old), skipping fetch
+2026-02-28T12:32:34.047Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-02-28T12:32:42.068Z [ERROR] Error: Error: 1P event logging: 19 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:32:42.068Z [ERROR] Error: Error: {"stack":"Error: Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:32:42.068Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:32:56.112Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-28T12:32:56.113Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-28T12:32:56.113Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-28T12:32:56.113Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-28T12:32:56.113Z [DEBUG] Sending 1 skills via attachment (initial, 1 total sent)
+2026-02-28T12:32:56.115Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-02-28T12:32:56.115Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-28T12:32:56.115Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:32:56.115Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-28T12:32:56.116Z [DEBUG] FileHistory: Added snapshot for b409654f-b054-4a3e-9f1c-c5110e73dfa6, tracking 0 files
+2026-02-28T12:32:56.117Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-02-28T12:32:56.132Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-28T12:32:56.134Z [DEBUG] Total plugin output styles loaded: 0
+2026-02-28T12:32:56.146Z [DEBUG] autocompact: tokens=56 threshold=167000 effectiveWindow=180000
+2026-02-28T12:32:56.147Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-28T12:32:56.156Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.63.a43; cc_entrypoint=cli; cch=00000;
+2026-02-28T12:32:56.157Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-28T12:32:56.157Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-28T12:32:56.157Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-28T12:33:06.178Z [ERROR] Error: Error: 1P event logging: 12 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:33:06.178Z [ERROR] Error: Error: {"stack":"Error: Failed to export 12 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 12 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:33:06.178Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 12 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 12 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:33:29.619Z [ERROR] API error (attempt 1/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:33:29.623Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-02-28T12:33:29.626Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-02-28T12:33:30.268Z [ERROR] API error (attempt 2/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:33:30.270Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-02-28T12:33:33.926Z [DEBUG] [onCancel] focusedInputDialog=undefined streamMode=requesting
+2026-02-28T12:33:33.931Z [ERROR] API error (attempt 3/11): undefined Request was aborted.
+2026-02-28T12:33:33.931Z [ERROR] Error in API request: Request was aborted.
+2026-02-28T12:33:33.932Z [ERROR] Error: Error: Request was aborted.
+    at mh.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:370:3940)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-02-28T12:33:33.933Z [DEBUG] [useDeferredValue] Messages deferred by 1 (4→5)
+2026-02-28T12:33:33.940Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-28T12:33:33.945Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772282013945
+2026-02-28T12:33:33.945Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:33:33.945Z [DEBUG] Temp file written successfully, size: 4323 bytes
+2026-02-28T12:33:33.945Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:33:33.945Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772282013945 to /Users/my/.claude.json
+2026-02-28T12:33:33.945Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:33:33.946Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772282013946
+2026-02-28T12:33:33.946Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:33:33.946Z [DEBUG] Temp file written successfully, size: 4324 bytes
+2026-02-28T12:33:33.946Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:33:33.946Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772282013946 to /Users/my/.claude.json
+2026-02-28T12:33:33.946Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:33:33.947Z [DEBUG] [useDeferredValue] Messages deferred by 1 (4→5)
+2026-02-28T12:33:39.660Z [ERROR] Error: Error: 1P event logging: 8 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:33:39.660Z [ERROR] Error: Error: {"stack":"Error: Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:33:39.660Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:33:52.388Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-28T12:33:52.389Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-28T12:33:52.389Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-28T12:33:52.389Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-28T12:33:52.391Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-28T12:33:52.391Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:33:52.391Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-28T12:33:52.391Z [DEBUG] FileHistory: Making snapshot for message 73fec930-33a7-44ed-bb0a-d00e3dbee40e
+2026-02-28T12:33:52.391Z [DEBUG] FileHistory: Added snapshot for 73fec930-33a7-44ed-bb0a-d00e3dbee40e, tracking 0 files
+2026-02-28T12:33:52.393Z [DEBUG] [useDeferredValue] Messages deferred by 1 (5→6)
+2026-02-28T12:33:52.405Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-28T12:33:52.407Z [DEBUG] autocompact: tokens=72 threshold=167000 effectiveWindow=180000
+2026-02-28T12:33:52.408Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-28T12:33:52.411Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.63.a43; cc_entrypoint=cli; cch=00000;
+2026-02-28T12:33:52.411Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-28T12:33:52.411Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-28T12:33:52.411Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-28T12:33:52.414Z [DEBUG] [useDeferredValue] Messages deferred by 1 (5→6)
+2026-02-28T12:34:02.433Z [ERROR] Error: Error: 1P event logging: 10 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:34:02.433Z [ERROR] Error: Error: {"stack":"Error: Failed to export 10 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 10 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:34:02.434Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 10 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 10 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:34:07.877Z [DEBUG] Stream started - received first chunk
+2026-02-28T12:34:13.089Z [DEBUG] [useDeferredValue] Messages deferred by 1 (6→7)
+2026-02-28T12:34:13.110Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-28T12:34:13.110Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-28T12:34:13.110Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:34:13.110Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-28T12:34:13.113Z [DEBUG] tree-sitter: WASM files not found
+2026-02-28T12:34:13.120Z [DEBUG] [useDeferredValue] Messages deferred by 1 (6→7)
+2026-02-28T12:34:13.126Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2026-02-28T12:34:13.127Z [DEBUG] Looking for shell config file: /Users/my/.zshrc
+2026-02-28T12:34:13.127Z [DEBUG] Snapshots directory: /Users/my/.claude/shell-snapshots
+2026-02-28T12:34:13.127Z [DEBUG] Creating snapshot at: /Users/my/.claude/shell-snapshots/snapshot-zsh-1772282053127-k0glff.sh
+2026-02-28T12:34:13.127Z [DEBUG] Execution timeout: 10000ms
+2026-02-28T12:34:14.191Z [DEBUG] Shell snapshot created successfully (1784 bytes)
+2026-02-28T12:34:14.192Z [DEBUG] No session environment scripts found
+2026-02-28T12:34:14.192Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-02-28T12:34:14.201Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772282054201
+2026-02-28T12:34:14.201Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:34:14.202Z [DEBUG] Temp file written successfully, size: 4423 bytes
+2026-02-28T12:34:14.202Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:34:14.202Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772282054201 to /Users/my/.claude.json
+2026-02-28T12:34:14.202Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:34:14.203Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-28T12:34:14.203Z [DEBUG] Found 5 hook matchers in settings
+2026-02-28T12:34:14.203Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-28T12:34:14.204Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-28T12:34:14.204Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-28T12:34:14.204Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-28T12:34:14.204Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-28T12:34:14.204Z [DEBUG] autocompact: tokens=3771 threshold=167000 effectiveWindow=180000
+2026-02-28T12:34:14.204Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-28T12:34:14.206Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.63.a43; cc_entrypoint=cli; cch=00000;
+2026-02-28T12:34:14.206Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-28T12:34:14.206Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-28T12:34:14.207Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-28T12:34:14.209Z [DEBUG] [useDeferredValue] Messages deferred by 1 (7→8)
+2026-02-28T12:34:16.427Z [DEBUG] Stream started - received first chunk
+2026-02-28T12:34:16.761Z [DEBUG] [useDeferredValue] Messages deferred by 1 (8→9)
+2026-02-28T12:34:16.866Z [DEBUG] [useDeferredValue] Messages deferred by 1 (9→10)
+2026-02-28T12:34:16.914Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-02-28T12:34:16.914Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:34:16.914Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-28T12:34:16.915Z [DEBUG] autocompact: tokens=4089 threshold=167000 effectiveWindow=180000
+2026-02-28T12:34:16.915Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-28T12:34:16.918Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.63.a43; cc_entrypoint=cli; cch=00000;
+2026-02-28T12:34:16.918Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-28T12:34:16.918Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-28T12:34:16.918Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-28T12:34:16.924Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-28T12:34:16.925Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772282056925
+2026-02-28T12:34:16.925Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:34:16.925Z [DEBUG] Temp file written successfully, size: 4424 bytes
+2026-02-28T12:34:16.925Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:34:16.925Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772282056925 to /Users/my/.claude.json
+2026-02-28T12:34:16.926Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:34:16.926Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772282056926
+2026-02-28T12:34:16.926Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:34:16.927Z [DEBUG] Temp file written successfully, size: 4425 bytes
+2026-02-28T12:34:16.927Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:34:16.927Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772282056926 to /Users/my/.claude.json
+2026-02-28T12:34:16.927Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:34:23.133Z [ERROR] Error: Error: 1P event logging: 27 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:34:23.134Z [ERROR] Error: Error: {"stack":"Error: Failed to export 27 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 27 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:34:23.134Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 27 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 27 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:35:10.652Z [ERROR] API error (attempt 1/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:35:10.652Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:35:11.982Z [ERROR] API error (attempt 2/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:35:11.982Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:35:13.664Z [ERROR] API error (attempt 3/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:35:13.664Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:35:16.927Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-02-28T12:35:16.928Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:35:16.928Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-02-28T12:35:17.064Z [ERROR] API error (attempt 4/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:35:17.064Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:35:20.725Z [ERROR] Error: Error: 1P event logging: 8 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:35:20.725Z [ERROR] Error: Error: {"stack":"Error: Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:35:20.725Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 8 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:35:23.608Z [ERROR] API error (attempt 5/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:35:23.608Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:35:32.013Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:35:32.013Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:35:32.013Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:35:34.138Z [ERROR] API error (attempt 6/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:35:34.139Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:35:43.006Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:35:43.006Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:35:43.006Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:35:52.091Z [ERROR] API error (attempt 7/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:35:52.091Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:36:00.670Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:36:00.670Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:36:00.670Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:36:24.542Z [ERROR] API error (attempt 8/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:36:24.543Z [DEBUG] Forked agent [prompt_suggestion] received message: type=system
+2026-02-28T12:36:33.056Z [ERROR] Error in API request: Request was aborted.
+2026-02-28T12:36:33.057Z [ERROR] Error: Error: Request was aborted.
+    at AbortSignal.w (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:889:35697)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:843:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:776:26)
+    at runAbort (node:internal/abort_controller:488:10)
+    at abortSignal (node:internal/abort_controller:459:3)
+    at AbortController.abort (node:internal/abort_controller:507:5)
+    at _o4 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2579:1173)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:12648:2678
+    at z6 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:688:588)
+    at onInput (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:732:922)
+2026-02-28T12:36:33.058Z [DEBUG] Forked agent [prompt_suggestion] received message: type=user
+2026-02-28T12:36:33.058Z [DEBUG] Forked agent [prompt_suggestion] finished: 9 messages, types=[system, system, system, system, system, system, system, system, user], totalUsage: input=0 output=0 cacheRead=0 cacheCreate=0
+2026-02-28T12:36:34.211Z [ERROR] Error: Error: 1P event logging: 5 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:36:34.211Z [ERROR] Error: Error: {"stack":"Error: Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:36:34.211Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:36:46.313Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-28T12:36:46.313Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-28T12:36:46.313Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-28T12:36:46.313Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-28T12:36:46.315Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-28T12:36:46.315Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:36:46.315Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-28T12:36:46.315Z [DEBUG] FileHistory: Making snapshot for message 52a5ced4-fb78-4c13-94db-a9431608aa75
+2026-02-28T12:36:46.315Z [DEBUG] FileHistory: Added snapshot for 52a5ced4-fb78-4c13-94db-a9431608aa75, tracking 0 files
+2026-02-28T12:36:46.316Z [DEBUG] [useDeferredValue] Messages deferred by 1 (10→11)
+2026-02-28T12:36:46.329Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-28T12:36:46.331Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/my/.claude/skills, project=[]
+2026-02-28T12:36:46.332Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-02-28T12:36:46.332Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 5 bundled skills
+2026-02-28T12:36:46.333Z [DEBUG] autocompact: tokens=3822 threshold=167000 effectiveWindow=180000
+2026-02-28T12:36:46.334Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-28T12:36:46.336Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.63.a43; cc_entrypoint=cli; cch=00000;
+2026-02-28T12:36:46.336Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-28T12:36:46.336Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-28T12:36:46.336Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-28T12:36:46.339Z [DEBUG] [useDeferredValue] Messages deferred by 1 (10→11)
+2026-02-28T12:36:47.032Z [ERROR] API error (attempt 1/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:36:47.033Z [DEBUG] [useDeferredValue] Messages deferred by 1 (11→12)
+2026-02-28T12:36:48.074Z [ERROR] API error (attempt 2/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:36:48.075Z [DEBUG] [useDeferredValue] Messages deferred by 1 (12→13)
+2026-02-28T12:36:49.799Z [ERROR] API error (attempt 3/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:36:49.801Z [DEBUG] [useDeferredValue] Messages deferred by 1 (13→14)
+2026-02-28T12:36:52.402Z [ERROR] API error (attempt 4/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:36:52.404Z [DEBUG] [useDeferredValue] Messages deferred by 1 (14→15)
+2026-02-28T12:36:52.428Z [DEBUG] High write ratio: blit=0, write=1056 (100.0% writes), screen=36x80
+2026-02-28T12:36:56.348Z [ERROR] Error: Error: 1P event logging: 19 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:36:56.349Z [ERROR] Error: Error: {"stack":"Error: Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:36:56.349Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 19 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:36:57.918Z [ERROR] API error (attempt 5/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:36:57.920Z [DEBUG] [useDeferredValue] Messages deferred by 1 (15→16)
+2026-02-28T12:36:57.932Z [DEBUG] High write ratio: blit=0, write=1057 (100.0% writes), screen=36x80
+2026-02-28T12:37:07.335Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:37:07.336Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:37:07.336Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:37:08.229Z [ERROR] API error (attempt 6/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:37:08.230Z [DEBUG] [useDeferredValue] Messages deferred by 1 (16→17)
+2026-02-28T12:37:08.255Z [DEBUG] High write ratio: blit=0, write=1057 (100.0% writes), screen=36x80
+2026-02-28T12:37:17.654Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:37:17.654Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:37:17.654Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:37:27.496Z [ERROR] API error (attempt 7/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:37:27.497Z [DEBUG] [useDeferredValue] Messages deferred by 1 (17→18)
+2026-02-28T12:37:27.521Z [DEBUG] High write ratio: blit=0, write=1062 (100.0% writes), screen=36x80
+2026-02-28T12:37:33.935Z [DEBUG] Failed to check metrics opt-out status: Auth error: No API key available
+2026-02-28T12:37:33.935Z [ERROR] Error: Error: Auth error: No API key available
+    at ll4 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:35155)
+    at jmY (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:35433)
+    at Y (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:108:27511)
+    at ZT1 (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:36128)
+    at Qh8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:36943)
+    at Qh8.export (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:36646)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:169640
+    at EfA.with (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:70401)
+    at Hi1.with (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:70977)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:169580
+2026-02-28T12:37:33.935Z [DEBUG] Metrics export disabled by organization setting
+2026-02-28T12:37:37.125Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:37:37.125Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:37:37.125Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:38:02.538Z [ERROR] API error (attempt 8/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:38:02.539Z [DEBUG] [useDeferredValue] Messages deferred by 1 (18→19)
+2026-02-28T12:38:02.564Z [DEBUG] High write ratio: blit=0, write=1065 (100.0% writes), screen=36x80
+2026-02-28T12:38:11.834Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:38:11.835Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:38:11.835Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:38:42.470Z [ERROR] API error (attempt 9/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:38:42.471Z [DEBUG] [useDeferredValue] Messages deferred by 1 (19→20)
+2026-02-28T12:38:42.495Z [DEBUG] High write ratio: blit=0, write=1065 (100.0% writes), screen=36x80
+2026-02-28T12:38:51.820Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:38:51.820Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:38:51.820Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:39:16.669Z [ERROR] API error (attempt 10/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:39:16.670Z [DEBUG] [useDeferredValue] Messages deferred by 1 (20→21)
+2026-02-28T12:39:16.695Z [DEBUG] High write ratio: blit=0, write=1066 (100.0% writes), screen=36x80
+2026-02-28T12:39:26.265Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:39:26.265Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:39:26.265Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:39:50.212Z [ERROR] API error (attempt 11/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:39:50.212Z [ERROR] Error in API request: 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:39:50.214Z [ERROR] Error: Error: 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+    at W4.generate (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:331:28599)
+    at mh.makeStatusError (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:370:2195)
+    at mh.makeRequest (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:370:5420)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-02-28T12:39:50.220Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-02-28T12:39:50.220Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:39:50.220Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-28T12:39:50.223Z [DEBUG] [useDeferredValue] Messages deferred by 2 (21→23)
+2026-02-28T12:39:50.234Z [DEBUG] High write ratio: blit=0, write=1109 (100.0% writes), screen=41x80
+2026-02-28T12:39:50.237Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-28T12:39:50.243Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772282390243
+2026-02-28T12:39:50.243Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:39:50.243Z [DEBUG] Temp file written successfully, size: 4426 bytes
+2026-02-28T12:39:50.243Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:39:50.243Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772282390243 to /Users/my/.claude.json
+2026-02-28T12:39:50.244Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:39:50.245Z [DEBUG] Writing to temp file: /Users/my/.claude.json.tmp.30144.1772282390245
+2026-02-28T12:39:50.245Z [DEBUG] Preserving file permissions: 100600
+2026-02-28T12:39:50.245Z [DEBUG] Temp file written successfully, size: 4427 bytes
+2026-02-28T12:39:50.246Z [DEBUG] Applied original permissions to temp file
+2026-02-28T12:39:50.246Z [DEBUG] Renaming /Users/my/.claude.json.tmp.30144.1772282390245 to /Users/my/.claude.json
+2026-02-28T12:39:50.246Z [DEBUG] File /Users/my/.claude.json written atomically
+2026-02-28T12:39:50.248Z [DEBUG] [useDeferredValue] Messages deferred by 2 (21→23)
+2026-02-28T12:39:59.866Z [ERROR] Error: Error: 1P event logging: 5 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:39:59.866Z [ERROR] Error: Error: {"stack":"Error: Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:39:59.866Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 5 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:40:50.241Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2026-02-28T12:40:50.241Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:40:50.241Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2026-02-28T12:41:00.421Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:41:00.422Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:41:00.422Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:42:33.932Z [DEBUG] Metrics export disabled by organization setting
+2026-02-28T12:48:53.218Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-28T12:48:53.218Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-28T12:48:53.218Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-28T12:48:53.218Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-28T12:48:53.219Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-28T12:48:53.219Z [DEBUG] Found 0 hook matchers in settings
+2026-02-28T12:48:53.220Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-28T12:48:53.220Z [DEBUG] FileHistory: Making snapshot for message db726f50-672a-4ba8-9384-ccdd2097598c
+2026-02-28T12:48:53.220Z [DEBUG] FileHistory: Added snapshot for db726f50-672a-4ba8-9384-ccdd2097598c, tracking 0 files
+2026-02-28T12:48:53.221Z [DEBUG] [useDeferredValue] Messages deferred by 1 (23→24)
+2026-02-28T12:48:53.237Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-28T12:48:53.240Z [DEBUG] autocompact: tokens=3870 threshold=167000 effectiveWindow=180000
+2026-02-28T12:48:53.241Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-28T12:48:53.245Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.63.a43; cc_entrypoint=cli; cch=00000;
+2026-02-28T12:48:53.246Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-28T12:48:53.246Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-28T12:48:53.246Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-28T12:48:53.249Z [DEBUG] [useDeferredValue] Messages deferred by 1 (23→24)
+2026-02-28T12:48:53.983Z [ERROR] API error (attempt 1/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:48:53.985Z [DEBUG] [useDeferredValue] Messages deferred by 1 (24→25)
+2026-02-28T12:48:54.710Z [ERROR] API error (attempt 2/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:48:54.711Z [DEBUG] [useDeferredValue] Messages deferred by 1 (25→26)
+2026-02-28T12:48:54.731Z [DEBUG] High write ratio: blit=0, write=1266 (100.0% writes), screen=47x80
+2026-02-28T12:48:56.271Z [ERROR] API error (attempt 3/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:48:56.272Z [DEBUG] [useDeferredValue] Messages deferred by 1 (26→27)
+2026-02-28T12:48:56.296Z [DEBUG] High write ratio: blit=0, write=1266 (100.0% writes), screen=47x80
+2026-02-28T12:48:59.376Z [ERROR] API error (attempt 4/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:48:59.378Z [DEBUG] [useDeferredValue] Messages deferred by 1 (27→28)
+2026-02-28T12:48:59.403Z [DEBUG] High write ratio: blit=0, write=1323 (100.0% writes), screen=49x80
+2026-02-28T12:49:03.253Z [ERROR] Error: Error: 1P event logging: 18 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:49:03.254Z [ERROR] Error: Error: {"stack":"Error: Failed to export 18 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 18 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:49:03.254Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 18 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 18 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:49:04.267Z [ERROR] API error (attempt 5/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:49:04.268Z [DEBUG] [useDeferredValue] Messages deferred by 1 (28→29)
+2026-02-28T12:49:04.285Z [DEBUG] High write ratio: blit=0, write=1324 (100.0% writes), screen=49x80
+2026-02-28T12:49:13.999Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:49:13.999Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:49:13.999Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:49:15.480Z [ERROR] API error (attempt 6/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:49:15.482Z [DEBUG] [useDeferredValue] Messages deferred by 1 (29→30)
+2026-02-28T12:49:15.509Z [DEBUG] High write ratio: blit=0, write=1324 (100.0% writes), screen=49x80
+2026-02-28T12:49:24.099Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:49:24.099Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:49:24.099Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:49:34.244Z [ERROR] API error (attempt 7/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:49:34.246Z [DEBUG] [useDeferredValue] Messages deferred by 1 (30→31)
+2026-02-28T12:49:34.269Z [DEBUG] High write ratio: blit=0, write=1329 (100.0% writes), screen=49x80
+2026-02-28T12:49:43.948Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:49:43.949Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:49:43.949Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:50:12.308Z [ERROR] API error (attempt 8/11): 502 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2026-02-28T12:50:12.310Z [DEBUG] [useDeferredValue] Messages deferred by 1 (31→32)
+2026-02-28T12:50:12.334Z [DEBUG] High write ratio: blit=0, write=1332 (100.0% writes), screen=49x80
+2026-02-28T12:50:22.004Z [ERROR] Error: Error: 1P event logging: 2 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:50:22.005Z [ERROR] Error: Error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:50:22.005Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 2 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+2026-02-28T12:50:54.850Z [ERROR] Error: Error: 1P event logging: 1 events failed to export (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)
+    at ac8.queueFailedEvents (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:2379)
+    at async ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1261)
+2026-02-28T12:50:54.850Z [ERROR] Error: Error: {"stack":"Error: Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}
+    at gh8.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:2478:34864)
+    at nl1.error (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:64369)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95394
+    at PCK (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:118:95940)
+    at file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:119:20250
+2026-02-28T12:50:54.850Z [ERROR] [3P telemetry] OTEL diag error: {"stack":"Error: Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)\n    at ac8.doExport (file:///opt/homebrew/lib/node_modules/@anthropic-ai/claude-code/cli.js:6340:1436)","message":"Failed to export 1 events (status=403, code=ERR_BAD_REQUEST, Request failed with status code 403)","name":"Error"}

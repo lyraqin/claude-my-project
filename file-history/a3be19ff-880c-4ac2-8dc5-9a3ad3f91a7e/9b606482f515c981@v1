@@ -1,0 +1,62 @@
+# Context
+User provided four Google Scholar XML exports (MISQ, JMIS, ISR, MS) and needs a single Markdown summary organized by research topic. All source files are read-only, and each row must be preserved unless deduplication is requested.
+
+**User choices confirmed:**
+- Classification method: Use suggested 4 topics (keyword-based)
+- Deduplication: Yes, deduplicate entries by DOI/normalized title
+
+# Goal
+Produce `/Users/my/Desktop/RA/Junting/organized-scholar-entries.md` that lists every citation from the four exports grouped under the four prescribed topics, with each entry containing a linked title, authors, journal/year, DOI/PDF link, and any notes/abstract text. Record the total entry count in the header and include a verification block describing classification/deduplication choices.
+
+# Files
+- `/Users/my/Desktop/RA/Junting/scholar-export-2026-03-20 MISQ.xml`
+- `/Users/my/Desktop/RA/Junting/scholar-export-2026-03-20 JMIS.xml`
+- `/Users/my/Desktop/RA/Junting/scholar-export-2026-03-20 ISR.xml`
+- `/Users/my/Desktop/RA/Junting/scholar-export-2026-03-20 MS.xml`
+
+# Constraints
+- Do not edit source XML files.
+- Deduplicate across exports using DOI (preferred) or normalized title; report both raw and dedup counts in the Markdown summary.
+- Use the provided four-topic taxonomy with reproducible keyword rules.
+- Preserve the total entry count in the header.
+- Write all outputs under `/Users/my/Desktop/RA/Junting/`.
+
+# Approach
+1. Parse each XML file as Excel "XML Spreadsheet 2003" format and extract all rows from the first worksheet, mapping columns by header labels (Title, Authors, Journal, Year, Abstract/Notes, DOI/Open-access URL, PDF URL, etc.).
+2. Normalize each row by trimming whitespace, collapsing abstract/newline spacing, and selecting a primary URL in priority order: DOI link > PDF URL > open-access URL.
+3. Deduplicate entries: use DOI (case-insensitive) as the primary key; if no DOI exists, normalize the title (lowercase, trimmed whitespace) and deduplicate on that value. Record which duplicates were collapsed so the verification block can report raw vs. unique counts.
+4. Apply the prescribed topic classification by matching keywords against the title and abstract/notes text. Assign each entry to every matching topic; if none match, place it under "Other / Uncategorized".
+5. Generate `organized-scholar-entries.md` with:
+   - Metadata header: date, raw row count per file, total raw rows, total unique entries, classification method (keyword rules), dedup strategy, and per-topic counts.
+   - Section per topic (Website Experience & Design; AI / Automation-Driven Systems; Consumer / Trust Signals; Visual / Multimedia Interactions; Other / Uncategorized). Each section opens with a brief description of the topic and its keyword triggers.
+   - Bullet list entries: `- Title (preferred link) — Authors. Journal (Year). DOI: <link if available>` followed by notes/abstract/pdfs.
+   - If an entry appears under multiple topics, include it in each relevant section with a parenthetical note like `(also listed under: ...)`. Include an Appendix showing canonical listing with source file names.
+   - A verification block at the top summarizing counts, deduplication choice, missing DOI count, and include a spot-check table of five random entries with the keywords that triggered their topics.
+
+# Classification rules (keyword triggers)
+- **Website Experience & Design**: website, webpage, ux, "user experience", navigation, interface, layout, mobile, responsive, homepage, design
+- **AI / Automation-Driven Systems**: ai, "machine learning", algorithm, automation, recommender, personalization, bot, "automated", nlp, "deep learning"
+- **Consumer / Trust Signals**: trust, privacy, disclosure, reputation, review, rating, credibility, signal, "trustworthy", "information disclosure"
+- **Visual / Multimedia Interactions**: image, video, visual, multimedia, ar, vr, augmented, 3d, infographic, visualisation, visualization
+- **Other / Uncategorized**: entries that match none of the above keywords
+Matching is case-insensitive and performed on both Title and Abstract/Notes fields.
+
+# Verification
+- Report raw row counts per XML export and aggregate total.
+- Report total unique entries after deduplication.
+- Report per-topic counts and note how many entries matched multiple topics.
+- Flag entries missing DOI/PDF links.
+- Spot-check five entries (with file/row context) and list the triggering keywords for their assigned topics.
+
+# Deliverables
+- `/Users/my/Desktop/RA/Junting/organized-scholar-entries.md` plus the verification block described above and an appendix showing canonical listing with source file tags.
+- Documented classification rules and deduplication strategy within this plan file.
+
+# Implementation steps
+1. Read all four XML files to understand their structure and column names.
+2. Write a Python script to parse the XML, normalize metadata, deduplicate, classify, and generate the Markdown output.
+3. Run the script and produce the final Markdown file.
+4. Verify counts match expected values.
+
+# Next steps
+Exit plan mode and begin implementation.
