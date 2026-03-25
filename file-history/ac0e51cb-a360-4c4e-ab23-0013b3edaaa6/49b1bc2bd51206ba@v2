@@ -1,2 +1,0 @@
-# ESG Preference slides verification
-- Slides rendered using `quarto render output/ESG Preference/esg-preference.qmd` (RevealJS). Installation attempt failed because `brew install quarto` requires sudo password. Quarto is still missing. Need either Quarto available or resort to alternative (pandoc?).
