@@ -1,0 +1,55 @@
+---
+title: "ESG Preference, Institutional Trading, and Stock Return Patterns"
+authors:
+  - "Jie Cao, Sheridan Titman, Xintong Zhan, Weiming Zhang"
+date: "Based on Journal of Financial and Quantitative Analysis, Vol. 58, No. 5"
+format:
+  revealjs:
+    theme: solarized
+    transition: fade
+---
+
+## Motivation: Institutional ESG Preference
+- SR institutions grew rapidly after 2004 while ESG data coverage expanded (Figure 1)
+- Limited attention ⇒ institutions trade on a small subset of buyable ESG stocks
+- Question: how do ESG preferences shape trading behavior and return predictability?
+
+## Data & Measures
+- Returns/prices/volumes from CRSP; ESG scores from MSCI ESG KLD Stats
+- **SR_IO:** share of aggregate holdings held by socially responsible (SR) institutions
+- **SUE score:** standardized unexpected earnings (lagged) used as mispricing signal
+- **SYY score:** composite mispricing score (opposite direction)
+- Figure 2 shows coverage of ESG scores over time
+
+## Hypotheses & Mechanisms
+- SR investors prefer high ESG stocks ⇒ they are likely to chase mispricing defined by SUE/SYY
+- Limited attention ⇒ SR institutions react less strongly to other signals (Table 2)
+- Hypotheses:
+  1. SR trading responds less to mispricing signals when their ESG-focused universe shrinks
+  2. SR holdings predict future returns once accounting for ESG preference
+
+## Trading Behavior Results (Table 2 summary)
+- Panel A: changes in ownership/number of institutions by SUE signal
+- Panel B: SYY signal exhibits similar patterns
+- SR institutions adjust positions less aggressively vs. baseline, suggesting concentration on ESG-preferred stocks
+- Robust to Newey-West standard errors; significance at 1%, 5%, 10% (***, **, *)
+
+## Return Patterns & Period Comparison
+- Double-sorted portfolios (SR_IO × SUE/SYY) generate significant alphas (Table 3)
+- Panel A/B: high SR_IO stocks deliver larger long-short spreads
+- Panel comparison (Table 4): 1996–2003 vs 2004–2016 shows ESG preference emerges with ESG investing boom
+
+## Robustness & Mechanisms
+- Liquidity & funding channels (Table 5): SR_IO linked to trading in low liquidity environments
+- Short-sale constraints & ESG attention (Table 7): SR firms face more scrutiny, less shorting
+- Investment horizon & SR active mutual funds (Table 8/9): horizon matters, active funds reinforce ESG premium
+- Alternative SR definitions (Table 10) and ESG score distribution (Figure 3)
+
+## Conclusion
+- ESG preference shapes institutional trading and creates return predictability through limited attention and mispricing signals
+- Policy implication: ESG-focused capital may slow price discovery in non-ESG sectors
+- Suggest further monitoring of ESG coverage/attention as ESG investing scales
+
+## References & Appendix Tables
+- Tables 11–12 detail triple sorts and size interactions
+- Appendix: variable definitions, price delay, SR_MO, and data sources

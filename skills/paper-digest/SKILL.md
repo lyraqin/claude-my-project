@@ -1,7 +1,7 @@
 ---
 name: paper-digest
-description: Generate a structured research digest from academic papers. Use when user asks to "summarize a paper", "digest a paper", "extract key contributions", or when preparing literature reviews, replication, or slides from papers in papers/. Supports .pdf, .docx, .tex, .qmd, and .md papers.
-argument-hint: "[paper filename in papers/]"
+description: Generate a structured research digest from academic papers. Use when user asks to "summarize a paper", "digest a paper", "extract key contributions", or when preparing literature reviews, replication, or slides from papers. Supports .pdf, .docx, .tex, .qmd, and .md papers.
+argument-hint: "[paper filename]"
 allowed-tools: ["Read", "Grep", "Glob", "Write", "Edit", "Bash"]
 disable-model-invocation: true
 ---
@@ -23,7 +23,7 @@ All digests are saved to:
 quality_reports/paper_digest_[papername].md
 ```
 
-Source papers in `papers/` are **read-only** and must not be modified.
+Source papers are **read-only** and must not be modified.
 
 ---
 

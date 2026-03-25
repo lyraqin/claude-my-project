@@ -2,7 +2,7 @@
 name: create-slides
 description: Guided slide creation workflow from papers and materials. Ensures notation consistency, pedagogical quality, and structured output.
 disable-model-invocation: true
-argument-hint: "[Topic name or paper filename in papers/]"
+argument-hint: "[Topic name or paper filename]"
 allowed-tools: ["Read", "Grep", "Glob", "Write", "Edit", "Bash", "Task"]
 context: fork
 ---
@@ -17,7 +17,7 @@ Create high-quality academic slides from source papers, notes, or other material
 
 ## CONSTRAINTS (Non-Negotiable)
 
-1. **Read the knowledge base first** (`templates/notation_registry.md`, previous session logs)
+1. **Read the knowledge base first** (previous session logs)
 
 2. All new symbols must be checked against the notation registry
 3. Motivation before formal definitions — never omit motivation
@@ -26,7 +26,7 @@ Create high-quality academic slides from source papers, notes, or other material
 6. Avoid `\pause` or overlay commands unless project rules allow
 7. Insert transition slides at major conceptual pivots
 8. Thread at least 1 running empirical example through the lecture
-9. Verify all citations against `papers/` and project bibliography
+9. Verify all citations against  and project bibliography
 10. Work in batches of 5–10 slides — share iteratively, avoid bulk-dumping
 
 ---
@@ -34,7 +34,7 @@ Create high-quality academic slides from source papers, notes, or other material
 ## WORKFLOW
 
 ### Phase 0: Intake & Context
-- Read `papers/` and knowledge base (`templates/notation_registry.md`)
+- Read  knowledge base 
 - Inventory provided materials: `.docx`, `.tex`, `.qmd`, `.md`, R scripts, figures
 - State pedagogical goal, get user confirmation before drafting
 
@@ -60,14 +60,14 @@ Create high-quality academic slides from source papers, notes, or other material
 
 ### Phase 4: Figures & Code
 - R scripts follow project conventions (`scripts/`)
-- TikZ diagrams stored in `output/figures/` or embedded in Beamer `.tex`
+- TikZ diagrams stored in `output/figures/` or embedded in  `.tex`
 - Save intermediate objects (RDS, CSV) for later integration into Quarto
 
 ### Phase 5: Polish & Compile
-- Full 3-pass compilation if using LaTeX / Beamer
+- Full 3-pass compilation if using LaTeX
 - Run Devil's Advocate review (challenge assumptions, notation, flow)
 - Optionally run domain-specific review (`proofread` / `review-paper`)
-- Update notation registry (`templates/notation_registry.md`) and session logs (`quality_reports/`)
+- Update  session logs (`quality_reports/`)
 
 ---
 
@@ -75,10 +75,9 @@ Create high-quality academic slides from source papers, notes, or other material
 
 | Type | Location |
 |------|---------|
-| Draft slides | `output/[Topic]/*.tex` or `output/[Topic]/*.qmd` |
+| Draft slides | `output/[Topic]/*.tex` |
 | Figures | `output/figures/` |
 | Session log | `quality_reports/session_[Topic].md` |
-| Notation updates | `templates/notation_registry.md` |
 | Quality reports | `quality_reports/` |
 
 ---

@@ -1,0 +1,66 @@
+# Paper Digest
+
+**Paper:** ESG Preference, Institutional Trading, and Stock Return Patterns
+**Authors:** Jie Cao, Sheridan Titman, Xintong Zhan, Weiming Zhang
+**Year:** 2023
+**Source File:** /Users/my/output/ESG Preference.docx
+
+---
+
+# Research Question
+How do ESG preferences and attention constraints of socially responsible (SR) institutions shape their trading behavior and the return patterns of the stocks they favor? The paper asks whether ESG-driven demand alters price discovery and generates predictable return spreads.
+
+---
+
+# Main Contribution
+Provides the first empirical mapping from ESG preference to institutional trading/returns by linking (i) a novel SR institutional ownership measure built from MSCI ESG KLD holdings to (ii) mispricing signals (SUE/SYY) and (iii) subsequent portfolio returns. The work highlights how ESG-driven taste-based demand creates a persistent predictability channel.
+
+---
+
+# Theoretical Framework
+No formal theoretical model; the authors motivate the analysis with a limited-attention mechanism in which SR institutions focus on ESG-salient stocks, restricting the set of trading signals they process and slowing price discovery outside that set.
+
+---
+
+# Data
+CRSP stock returns/prices/volumes (January 1996–December 2016) merged with MSCI ESG KLD Stats ESG scores. Key constructs include SR_IO (weight-share of SR institutions), SUE score (standardized unexpected earnings), and SYY score (composite mispricing signal). Supplementary data cover analyst coverage, liquidity, short-sale variables, and firm characteristics.
+
+---
+
+# Empirical Strategy
+Classify institutions as SR based on top ESG holdings each quarter. Analyze trading changes using quarterly ownership rebalancing relative to mispricing signals (Table 2) with Newey-West t-statistics. Double sorts (SR_IO × mispricing) generate abnormal return tables (Tables 3–4); panel regressions (Table 5–6) link SR_IO to liquidity/funding measures and price delay. Additional specifications compare SR active mutual funds, investment horizons, alternative SR definitions, and size interactions.
+
+---
+
+# Main Results
+- SR instituions adjust ownership less to SUE/SYY signals, indicating they trade within a narrower ESG-preferred universe (Table 2).
+- Portfolios double-sorted on SR_IO and mispricing (Table 3) produce significant long-short alphas, with stronger effects post-2004 (Table 4).
+- Price-delay regressions show SR holdings associate with slower information incorporation, especially during low funding liquidity periods (Tables 5–6).
+- Robustness across horizons, mutual funds, short-sale characteristics, and alternative SR measures (Tables 7–10).
+- Triple sorts and size interactions reveal ESG preference predicts returns even when controlling for ESG scores and firm size (Tables 11–12).
+
+---
+
+# Robustness Checks
+- Repeat analyses in 1996–2003 sample to show the ESG effect emerges after the ESG investing boom.
+- Alternative SR definitions (Asset4 ESG) and ESG score splits (Figure 3).
+- Control for liquidity/funding (Tables 5, 6) and short-sale pressures (Table 7).
+- SR active mutual funds and investment horizon slices (Tables 8–9) ensure results are not driven by indexation.
+- Triple sorts incorporate ESG score and size to rule out confounding firm characteristics (Tables 11–12).
+
+---
+
+# Limitations
+- SR classification hinges on ESG score availability and the chosen cutoff, which may evolve as ESG coverage expands.
+- Limited to U.S. CRSP sample; generalization to other markets requires caution.
+- No structural identification of the attention mechanism, so channel relies on empirical patterns rather than causal shocks.
+
+---
+
+# Relation to Literature
+Builds on ESG/normative demand literature (e.g., Hong & Kacperczyk 2009, Hartzmark & Sussman 2019) and the limits-to-arbitrage/mispricing literature (Chordia et al. 2014, Hou & Moskowitz 2005). Extends investment constraint narratives by tracing how ESG taste-based demand alters trading and pricing specifically through institutional holdings and mispricing signals.
+
+---
+
+# Relevance to Current Project
+Serves as the structured source material for the ESG Preference slide deck: it supplies the sketch for motivation, data/measures, trading results, return patterns, and robustness figures that we thread throughout the lecture. The digest ensures downstream skills (create-slides, econometric-review) share a consistent understanding of the paper's contributions.

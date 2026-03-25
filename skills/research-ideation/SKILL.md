@@ -34,7 +34,7 @@ Generate structured research questions, testable hypotheses, and empirical strat
 
 4. **Rank the questions** by feasibility and contribution.
 
-5. **Save the output** to `quality_reports/research_ideation_[sanitized_topic].md`
+5. **Save the output** to `output/research_ideation_[sanitized_topic].md`
 
 ---
 

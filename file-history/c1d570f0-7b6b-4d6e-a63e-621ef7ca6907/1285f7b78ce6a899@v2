@@ -1,0 +1,39 @@
+---
+title: "ESG Preference: Empirical Strategy"
+format:
+  revealjs:
+    theme: solarized
+    slide-level: 2
+    center: true
+    transition: slide
+execute:
+  echo: false
+---
+
+## Empirical Strategy + Results
+
+### Research focus
+- How do **SR institutions** (defined by top MSCI ESG KLD holdings) respond to **mispricing signals** when their attention is constrained by ESG salience?
+- Compare quarterly ownership rebalancing (SR_IO) against **SUE** (standardized unexpected earnings) and **SYY** (composite mispricing signal) to detect predictable trading gaps (Tables 2–4).
+
+::: columns
+
+::: column width="50%"
+### Data & Constructs
+- **SR_IO:** weight share of SR institutions per firm-quarter.
+- **SUE score:** surprises in earnings, standardized and lagged.
+- **SYY signal:** aggregation of mispricing proxies (value, momentum, profitability) that SR investors may ignore.
+- Training sample: US CRSP (1996–2016) merged with MSCI ESG KLD scores.
+:::
+
+::: column width="50%"
+### Key Results
+- SR institutions adjust ownership less to SUE/SYY, evidencing a narrower ESG-preferred universe (Table 2).
+- Double sorts on SR_IO × mispricing yield large long-short alphas, especially after 2004; results persist across horizons, mutual funds, and alternative SR cuts (Tables 3–10).
+- SR-heavy stocks exhibit slower information incorporation and more price delay, notably during low funding liquidity episodes (Tables 5–6).
+:::
+
+:::
+
+### Takeaway
+- ESG-driven demand slows price discovery for favored stocks, leaving a persistent return spread tied to attentional limits (Tables 11–12).
